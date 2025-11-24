@@ -15,7 +15,7 @@ Steam에 출시 되어 있는 인스크립션 [link](https://store.steampowered.
 - UI
 
 ### 버전 관리
-[ 버전 링크 ]()
+[ 버전 링크 ](https://github.com/BestBlackCube/WinForm04Project/blob/main/versionLog.md)
 
 ### 기술 스택
 Visual Studio WinForm C#
