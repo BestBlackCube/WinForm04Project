@@ -119,5 +119,35 @@
   <ItemGroup>
     <None Include="Resources\MonsterCard10.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard10.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

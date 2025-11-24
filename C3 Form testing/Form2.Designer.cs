@@ -34,27 +34,27 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.MaximumSize = new System.Drawing.Size(183, 278);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.MaximumSize = new System.Drawing.Size(160, 222);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(183, 278);
+            this.pictureBox1.Size = new System.Drawing.Size(160, 222);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(352, 448);
+            this.ClientSize = new System.Drawing.Size(308, 358);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MinimumSize = new System.Drawing.Size(91, 139);
+            this.MinimumSize = new System.Drawing.Size(82, 119);
             this.Name = "Form2";
-            this.Text = "메인 페이지";
+            this.Text = "카드 상태창";
             this.Load += new System.EventHandler(this.Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
+           this.ResumeLayout(false);
 
         }
 

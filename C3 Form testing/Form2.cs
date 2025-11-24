@@ -12,6 +12,7 @@ namespace C3_Form_testing
 {
     public partial class Form2 : Form
     {
+        //Form2 form2form;
         public Form2(Form1 form1)
         {
             _form1 = form1;
@@ -55,11 +56,7 @@ namespace C3_Form_testing
             int code = Form1CardKeycode;
             for (int i = 0; i <= 9; i++)
             {
-                if (i >= code)
-                {
-                    pictureBox1.Image = keycode[i].MonsterCardcode;
-                    break;
-                }
+                
             }
         }
     }
