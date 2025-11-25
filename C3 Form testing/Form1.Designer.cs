@@ -102,7 +102,7 @@
             // button3
             // 
             this.button3.AutoSize = true;
-            this.button3.Location = new System.Drawing.Point(1034, 839);
+            this.button3.Location = new System.Drawing.Point(1029, 839);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.MaximumSize = new System.Drawing.Size(183, 278);
             this.button3.MinimumSize = new System.Drawing.Size(91, 139);
@@ -116,7 +116,7 @@
             // button4
             // 
             this.button4.AutoSize = true;
-            this.button4.Location = new System.Drawing.Point(1223, 839);
+            this.button4.Location = new System.Drawing.Point(1218, 839);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.MaximumSize = new System.Drawing.Size(183, 278);
             this.button4.MinimumSize = new System.Drawing.Size(91, 139);
@@ -130,7 +130,7 @@
             // button5
             // 
             this.button5.AutoSize = true;
-            this.button5.Location = new System.Drawing.Point(1414, 839);
+            this.button5.Location = new System.Drawing.Point(1409, 839);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.MaximumSize = new System.Drawing.Size(183, 278);
             this.button5.MinimumSize = new System.Drawing.Size(91, 139);
@@ -143,7 +143,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(655, 762);
+            this.button6.Location = new System.Drawing.Point(648, 762);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.MaximumSize = new System.Drawing.Size(183, 56);
             this.button6.MinimumSize = new System.Drawing.Size(91, 29);
@@ -157,7 +157,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(845, 762);
+            this.button7.Location = new System.Drawing.Point(840, 762);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.MaximumSize = new System.Drawing.Size(183, 56);
             this.button7.MinimumSize = new System.Drawing.Size(91, 29);
@@ -171,7 +171,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(1034, 762);
+            this.button8.Location = new System.Drawing.Point(1029, 762);
             this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button8.MaximumSize = new System.Drawing.Size(183, 56);
             this.button8.MinimumSize = new System.Drawing.Size(91, 29);
@@ -185,7 +185,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(1223, 762);
+            this.button9.Location = new System.Drawing.Point(1218, 762);
             this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button9.MaximumSize = new System.Drawing.Size(183, 56);
             this.button9.MinimumSize = new System.Drawing.Size(91, 29);
@@ -199,7 +199,7 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(1414, 762);
+            this.button10.Location = new System.Drawing.Point(1409, 762);
             this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button10.MaximumSize = new System.Drawing.Size(183, 56);
             this.button10.MinimumSize = new System.Drawing.Size(91, 29);
@@ -215,7 +215,7 @@
             // 
             this.button20.AutoSize = true;
             this.button20.Font = new System.Drawing.Font("굴림", 15F);
-            this.button20.Location = new System.Drawing.Point(1615, 787);
+            this.button20.Location = new System.Drawing.Point(1615, 839);
             this.button20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button20.MaximumSize = new System.Drawing.Size(183, 112);
             this.button20.MinimumSize = new System.Drawing.Size(91, 56);
@@ -247,7 +247,7 @@
             this.button1.AutoSize = true;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(648, 839);
+            this.button1.Location = new System.Drawing.Point(650, 839);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.MaximumSize = new System.Drawing.Size(183, 278);
             this.button1.MinimumSize = new System.Drawing.Size(91, 139);
@@ -260,11 +260,10 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("굴림", 15F);
-            this.label1.Location = new System.Drawing.Point(821, 1219);
+            this.label1.Location = new System.Drawing.Point(648, 1119);
             this.label1.MaximumSize = new System.Drawing.Size(74, 25);
             this.label1.MinimumSize = new System.Drawing.Size(38, 12);
             this.label1.Name = "label1";
@@ -274,11 +273,10 @@
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.Font = new System.Drawing.Font("굴림", 15F);
-            this.label2.Location = new System.Drawing.Point(912, 1219);
+            this.label2.Location = new System.Drawing.Point(746, 1119);
             this.label2.MaximumSize = new System.Drawing.Size(87, 25);
             this.label2.MinimumSize = new System.Drawing.Size(43, 12);
             this.label2.Name = "label2";
@@ -288,11 +286,10 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.Font = new System.Drawing.Font("굴림", 15F);
-            this.label3.Location = new System.Drawing.Point(1007, 1219);
+            this.label3.Location = new System.Drawing.Point(840, 1119);
             this.label3.MaximumSize = new System.Drawing.Size(74, 25);
             this.label3.MinimumSize = new System.Drawing.Size(38, 12);
             this.label3.Name = "label3";
@@ -302,11 +299,10 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.Control;
             this.label4.Font = new System.Drawing.Font("굴림", 15F);
-            this.label4.Location = new System.Drawing.Point(1104, 1219);
+            this.label4.Location = new System.Drawing.Point(936, 1119);
             this.label4.MaximumSize = new System.Drawing.Size(87, 25);
             this.label4.MinimumSize = new System.Drawing.Size(43, 12);
             this.label4.Name = "label4";
@@ -316,11 +312,10 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.Font = new System.Drawing.Font("굴림", 15F);
-            this.label5.Location = new System.Drawing.Point(1199, 1219);
+            this.label5.Location = new System.Drawing.Point(1030, 1119);
             this.label5.MaximumSize = new System.Drawing.Size(74, 25);
             this.label5.MinimumSize = new System.Drawing.Size(38, 12);
             this.label5.Name = "label5";
@@ -330,11 +325,10 @@
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.Control;
             this.label6.Font = new System.Drawing.Font("굴림", 15F);
-            this.label6.Location = new System.Drawing.Point(1298, 1219);
+            this.label6.Location = new System.Drawing.Point(1125, 1119);
             this.label6.MaximumSize = new System.Drawing.Size(87, 25);
             this.label6.MinimumSize = new System.Drawing.Size(43, 12);
             this.label6.Name = "label6";
@@ -344,11 +338,10 @@
             // 
             // label7
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.Control;
             this.label7.Font = new System.Drawing.Font("굴림", 15F);
-            this.label7.Location = new System.Drawing.Point(1391, 1219);
+            this.label7.Location = new System.Drawing.Point(1218, 1119);
             this.label7.MaximumSize = new System.Drawing.Size(74, 25);
             this.label7.MinimumSize = new System.Drawing.Size(38, 12);
             this.label7.Name = "label7";
@@ -358,11 +351,10 @@
             // 
             // label8
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.SystemColors.Control;
             this.label8.Font = new System.Drawing.Font("굴림", 15F);
-            this.label8.Location = new System.Drawing.Point(1486, 1219);
+            this.label8.Location = new System.Drawing.Point(1314, 1119);
             this.label8.MaximumSize = new System.Drawing.Size(87, 25);
             this.label8.MinimumSize = new System.Drawing.Size(43, 12);
             this.label8.Name = "label8";
@@ -372,11 +364,10 @@
             // 
             // label9
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.Control;
             this.label9.Font = new System.Drawing.Font("굴림", 15F);
-            this.label9.Location = new System.Drawing.Point(1579, 1219);
+            this.label9.Location = new System.Drawing.Point(1409, 1119);
             this.label9.MaximumSize = new System.Drawing.Size(74, 25);
             this.label9.MinimumSize = new System.Drawing.Size(38, 12);
             this.label9.Name = "label9";
@@ -386,11 +377,10 @@
             // 
             // label10
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.SystemColors.Control;
             this.label10.Font = new System.Drawing.Font("굴림", 15F);
-            this.label10.Location = new System.Drawing.Point(1678, 1219);
+            this.label10.Location = new System.Drawing.Point(1505, 1119);
             this.label10.MaximumSize = new System.Drawing.Size(87, 25);
             this.label10.MinimumSize = new System.Drawing.Size(43, 12);
             this.label10.Name = "label10";
@@ -572,10 +562,9 @@
             // 
             // button12
             // 
-            this.button12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button12.AutoSize = true;
             this.button12.Font = new System.Drawing.Font("굴림", 15F);
-            this.button12.Location = new System.Drawing.Point(1791, 1055);
+            this.button12.Location = new System.Drawing.Point(1615, 969);
             this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button12.MaximumSize = new System.Drawing.Size(183, 112);
             this.button12.MinimumSize = new System.Drawing.Size(91, 56);
@@ -719,6 +708,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("굴림", 13F);
             this.textBox1.Location = new System.Drawing.Point(201, 101);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -733,7 +723,7 @@
             // 
             this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("굴림", 13F);
-            this.textBox2.Location = new System.Drawing.Point(391, 637);
+            this.textBox2.Location = new System.Drawing.Point(391, 638);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -743,7 +733,7 @@
             // pictureBox11
             // 
             this.pictureBox11.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox11.Location = new System.Drawing.Point(202, 637);
+            this.pictureBox11.Location = new System.Drawing.Point(202, 638);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox11.MaximumSize = new System.Drawing.Size(320, 444);
             this.pictureBox11.MinimumSize = new System.Drawing.Size(80, 111);
@@ -830,7 +820,8 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox5.TabIndex = 24;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.FieldCard_Info5);
+            this.pictureBox5.Click += new System.EventHandler(this.MagicClick);
+            this.pictureBox5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FieldCard_Info5);
             // 
             // pictureBox4
             // 
@@ -844,7 +835,8 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox4.TabIndex = 23;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.FieldCard_Info4);
+            this.pictureBox4.Click += new System.EventHandler(this.MagicClick);
+            this.pictureBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FieldCard_Info4);
             // 
             // pictureBox3
             // 
@@ -858,7 +850,8 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 22;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.FieldCard_Info3);
+            this.pictureBox3.Click += new System.EventHandler(this.MagicClick);
+            this.pictureBox3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FieldCard_Info3);
             // 
             // pictureBox2
             // 
@@ -872,7 +865,8 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.FieldCard_Info2);
+            this.pictureBox2.Click += new System.EventHandler(this.MagicClick);
+            this.pictureBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FieldCard_Info2);
             // 
             // pictureBox1
             // 
@@ -886,7 +880,8 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.FieldCard_Info1);
+            this.pictureBox1.Click += new System.EventHandler(this.MagicClick);
+            this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FieldCard_Info1);
             // 
             // Form1
             // 
@@ -955,7 +950,7 @@
             this.Controls.Add(this.button1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MinimumSize = new System.Drawing.Size(1440, 700);
+            this.MinimumSize = new System.Drawing.Size(1440, 698);
             this.Name = "Form1";
             this.Text = "전투 페이지";
             this.Load += new System.EventHandler(this.Form1_Load);
