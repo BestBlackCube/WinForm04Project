@@ -1,19 +1,17 @@
-# WinForm04 Project 카드 게임 개발 2.2.3v
+# WinForm04 Project 카드 게임 개발 2.3.3v
 ## 기능 설명
-카드의 이미지를 직접 제작하여, 이미지에 맞게 UI를 재 배치,  
-Form 화면 비율을 전체화면 크기에 맞추어 실행 및 내부의 UI는 고정된 위치 값을 가짐
+마법 카드의 종류는 공격력 증가 단일 카드 였지만 다양성을 위해 공격력 증가와 체력 증가로 나눔
 
 
 
 - ## Form01
-    - ### 카드 이미지 업데이트
-        - 직접 제작한 카드 이미지를 Create 폴더에 넣어 비쥬얼 스튜디오 Resource 폴더에 대입 한다.
-    - ### UI 재배치
-        - 기존 능력치를 시각적으로 볼 수 있는 TextBox를 외부에 배치 해 놓았지만, 카드 이미지 내에  
-        능력치 칸을 만들어 그곳에 맞는 크기로 조절하여 재배치 함.
-    - ### [화면 비율 유지](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L1297-L1336)
-        - Form 화면을 임의로 조절 하였을 때 내부 UI의 위치가 크기에 맞게 임의 조절이 되어 내부가  
-        무너지는 모습이 보여, UI의 고정된 크기와 위치를 갖고 이동을 막음.
+    - ### [마법카드 종류](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L59-L87)
+        - 캐릭터 카드와 동일하게 카드 구조체에 이미지와 능력치를 대입한다.
+    - ### [마법카드 추가](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L182-L200)
+        - 마법카드는 공격력과 체력 2가지로 나뉘며, 0~9까지의 난수로 0~4: 공격력 5~9: 체력 50:50 비율로 선정 된다.  
+    - ### [마법카드 사용](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L631-L650)
+        - Magicbool 정수값 구별기로 공격력 카드인지 체력카드인지 중간 과정을 거쳐 각각의 소스 코드로 이동 된다. 
+
 
 - ## 버그
 
