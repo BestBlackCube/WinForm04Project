@@ -4,7 +4,7 @@
 ## 프로젝트 4조
 WinForm으로 카드게임을 개발하자!
 
-Steam에 출시 되어 있는 인스크립션 [link](https://store.steampowered.com/app/1092790/Inscryption/) 게임의 전투 시스템을 참고하여 만든 게임이며,  
+Steam에 출시 되어 있는 인스크립션 [Steam link](https://store.steampowered.com/app/1092790/Inscryption/) 게임의 전투 시스템을 참고하여 만든 게임이며,  
 다양한 카드로 필드 전략을 구상하여 상대의 Hp를 전부 소진 시키면 이기는 방식입니다.
 
 ### 담당 파트
