@@ -16,7 +16,7 @@
         - 캐릭터 카드일때와 마법 카드일때의 소스코드를 구별하여 카드마다 다른 결과를 불러 오게 한다.
     - ### [buttonTrue_False](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L101=L108)
         - 손패 카드의 클릭여부를 초기화 시키는 함수
-    - ### [Card_FieldFull_Fieldnull](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#109-L126)
+    - ### [Card_FieldFull_Fieldnull](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L109-L126)
         - 필드 카드의 캐릭터 카드가 있는지 없는지를 구별하는 함수
     - ### [MagicSpell_AddCard](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L128-L135)
         - 손패에 있는 마법카드를 선택 했을때 필드에 캐릭터 카드가 있는지 없는지 구별하는 함수 
