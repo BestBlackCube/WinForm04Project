@@ -85,6 +85,8 @@ namespace C3_Form_testing
                 CardDB[i].MagicATK = i; CardDB[i].keycode = i; CardDB[i].MagicHP = i;
             }
         }
+        Form2 form2 = new Form2();
+        public int GameLV = 0;
         public void AiCardcodesetting()
         {
             CardDB[0].AiMonsterCardcode = Properties.Resources.MonsterCard1;
@@ -99,8 +101,22 @@ namespace C3_Form_testing
             CardDB[9].AiMonsterCardcode = Properties.Resources.MonsterCard10;
             for (int i = 0; i <= 9; i++)
             {
-                CardDB[i].AiATK = ATK_point.Next(1, 7); CardDB[i].AiHP = HP_point.Next(1, 10);
-                CardDB[i].Aikeycode = i;
+                if(GameLV == 0)
+                {
+                    CardDB[i].AiATK = ATK_point.Next(1, 5); CardDB[i].AiHP = HP_point.Next(1, 6);
+                    CardDB[i].Aikeycode = i;
+                }
+                else if(GameLV == 1)
+                {
+                    CardDB[i].AiATK = ATK_point.Next(2, 6); CardDB[i].AiHP = HP_point.Next(2, 8);
+                    CardDB[i].Aikeycode = i;
+                }
+                else if(GameLV == 2)
+                {
+                    CardDB[i].AiATK = ATK_point.Next(3, 7); CardDB[i].AiHP = HP_point.Next(3, 10);
+                    CardDB[i].Aikeycode = i;
+                }
+               
             }
         }
         public void buttonTrue_False()
