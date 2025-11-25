@@ -90,36 +90,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\MonsterCard9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MonsterCard1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MonsterCard2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MonsterCard3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MonsterCard4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MonsterCard5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MonsterCard6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MonsterCard7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MonsterCard8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MonsterCard10.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\MagicCard1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +118,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MagicCard10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nullCard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterCard1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterCard2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterCard3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterCard4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterCard5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterCard6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterCard7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterCard9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterCard8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterCard10.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

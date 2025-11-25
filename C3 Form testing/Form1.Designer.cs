@@ -1,4 +1,6 @@
-﻿namespace C3_Form_testing
+﻿using System.Drawing;
+
+namespace C3_Form_testing
 {
     partial class Form1
     {
@@ -28,18 +30,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -86,6 +84,12 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -99,56 +103,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button3
-            // 
-            this.button3.AutoSize = true;
-            this.button3.Location = new System.Drawing.Point(1029, 839);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.MaximumSize = new System.Drawing.Size(183, 278);
-            this.button3.MinimumSize = new System.Drawing.Size(91, 139);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(183, 278);
-            this.button3.TabIndex = 2;
-            this.button3.TabStop = false;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Card3_button);
-            // 
-            // button4
-            // 
-            this.button4.AutoSize = true;
-            this.button4.Location = new System.Drawing.Point(1218, 839);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.MaximumSize = new System.Drawing.Size(183, 278);
-            this.button4.MinimumSize = new System.Drawing.Size(91, 139);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(183, 278);
-            this.button4.TabIndex = 3;
-            this.button4.TabStop = false;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Card4_button);
-            // 
-            // button5
-            // 
-            this.button5.AutoSize = true;
-            this.button5.Location = new System.Drawing.Point(1409, 839);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.MaximumSize = new System.Drawing.Size(183, 278);
-            this.button5.MinimumSize = new System.Drawing.Size(91, 139);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(183, 278);
-            this.button5.TabIndex = 6;
-            this.button5.TabStop = false;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Card5_button);
-            // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(648, 762);
+            this.button6.Location = new System.Drawing.Point(569, 594);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.MaximumSize = new System.Drawing.Size(183, 56);
-            this.button6.MinimumSize = new System.Drawing.Size(91, 29);
+            this.button6.MaximumSize = new System.Drawing.Size(160, 45);
+            this.button6.MinimumSize = new System.Drawing.Size(80, 23);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(183, 56);
+            this.button6.Size = new System.Drawing.Size(160, 45);
             this.button6.TabIndex = 5;
             this.button6.TabStop = false;
             this.button6.Text = "필드 소환";
@@ -157,12 +119,12 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(840, 762);
+            this.button7.Location = new System.Drawing.Point(735, 594);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button7.MaximumSize = new System.Drawing.Size(183, 56);
-            this.button7.MinimumSize = new System.Drawing.Size(91, 29);
+            this.button7.MaximumSize = new System.Drawing.Size(160, 45);
+            this.button7.MinimumSize = new System.Drawing.Size(80, 23);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(183, 56);
+            this.button7.Size = new System.Drawing.Size(160, 45);
             this.button7.TabIndex = 4;
             this.button7.TabStop = false;
             this.button7.Text = "필드 소환";
@@ -171,12 +133,12 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(1029, 762);
+            this.button8.Location = new System.Drawing.Point(900, 594);
             this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button8.MaximumSize = new System.Drawing.Size(183, 56);
-            this.button8.MinimumSize = new System.Drawing.Size(91, 29);
+            this.button8.MaximumSize = new System.Drawing.Size(160, 45);
+            this.button8.MinimumSize = new System.Drawing.Size(80, 23);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(183, 56);
+            this.button8.Size = new System.Drawing.Size(160, 45);
             this.button8.TabIndex = 7;
             this.button8.TabStop = false;
             this.button8.Text = "필드 소환";
@@ -185,12 +147,12 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(1218, 762);
+            this.button9.Location = new System.Drawing.Point(1066, 594);
             this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button9.MaximumSize = new System.Drawing.Size(183, 56);
-            this.button9.MinimumSize = new System.Drawing.Size(91, 29);
+            this.button9.MaximumSize = new System.Drawing.Size(160, 45);
+            this.button9.MinimumSize = new System.Drawing.Size(80, 23);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(183, 56);
+            this.button9.Size = new System.Drawing.Size(160, 45);
             this.button9.TabIndex = 14;
             this.button9.TabStop = false;
             this.button9.Text = "필드 소환";
@@ -199,12 +161,12 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(1409, 762);
+            this.button10.Location = new System.Drawing.Point(1233, 594);
             this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button10.MaximumSize = new System.Drawing.Size(183, 56);
-            this.button10.MinimumSize = new System.Drawing.Size(91, 29);
+            this.button10.MaximumSize = new System.Drawing.Size(160, 45);
+            this.button10.MinimumSize = new System.Drawing.Size(80, 23);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(183, 56);
+            this.button10.Size = new System.Drawing.Size(160, 45);
             this.button10.TabIndex = 13;
             this.button10.TabStop = false;
             this.button10.Text = "필드 소환";
@@ -215,215 +177,203 @@
             // 
             this.button20.AutoSize = true;
             this.button20.Font = new System.Drawing.Font("굴림", 15F);
-            this.button20.Location = new System.Drawing.Point(1615, 839);
+            this.button20.Location = new System.Drawing.Point(1413, 655);
             this.button20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button20.MaximumSize = new System.Drawing.Size(183, 112);
-            this.button20.MinimumSize = new System.Drawing.Size(91, 56);
+            this.button20.MaximumSize = new System.Drawing.Size(160, 90);
+            this.button20.MinimumSize = new System.Drawing.Size(80, 45);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(183, 112);
+            this.button20.Size = new System.Drawing.Size(160, 90);
             this.button20.TabIndex = 19;
             this.button20.TabStop = false;
             this.button20.Text = "카트 뽑기";
             this.button20.UseVisualStyleBackColor = true;
             this.button20.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MyhandCardAdd_button);
             // 
-            // button2
+            // label1
             // 
-            this.button2.AutoSize = true;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Location = new System.Drawing.Point(840, 839);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.MaximumSize = new System.Drawing.Size(183, 278);
-            this.button2.MinimumSize = new System.Drawing.Size(91, 139);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(183, 278);
-            this.button2.TabIndex = 1;
-            this.button2.TabStop = false;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Card2_button);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(609, 834);
+            this.label1.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label1.MinimumSize = new System.Drawing.Size(33, 10);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(33, 20);
+            this.label1.TabIndex = 34;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // button1
             // 
             this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(650, 839);
+            this.button1.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.button1.Location = new System.Drawing.Point(569, 655);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.MaximumSize = new System.Drawing.Size(183, 278);
-            this.button1.MinimumSize = new System.Drawing.Size(91, 139);
+            this.button1.MaximumSize = new System.Drawing.Size(160, 222);
+            this.button1.MinimumSize = new System.Drawing.Size(80, 111);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 278);
+            this.button1.Size = new System.Drawing.Size(160, 222);
             this.button1.TabIndex = 0;
             this.button1.TabStop = false;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Card1_button);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("굴림", 15F);
-            this.label1.Location = new System.Drawing.Point(648, 1119);
-            this.label1.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label1.MinimumSize = new System.Drawing.Size(38, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 25);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "HP : 0";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.Font = new System.Drawing.Font("굴림", 15F);
-            this.label2.Location = new System.Drawing.Point(746, 1119);
-            this.label2.MaximumSize = new System.Drawing.Size(87, 25);
-            this.label2.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Location = new System.Drawing.Point(683, 834);
+            this.label2.MaximumSize = new System.Drawing.Size(76, 20);
+            this.label2.MinimumSize = new System.Drawing.Size(33, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 25);
+            this.label2.Size = new System.Drawing.Size(33, 20);
             this.label2.TabIndex = 35;
-            this.label2.Text = "ATK : 0";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.Font = new System.Drawing.Font("굴림", 15F);
-            this.label3.Location = new System.Drawing.Point(840, 1119);
-            this.label3.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label3.MinimumSize = new System.Drawing.Size(38, 12);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(775, 834);
+            this.label3.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label3.MinimumSize = new System.Drawing.Size(33, 10);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 25);
+            this.label3.Size = new System.Drawing.Size(33, 20);
             this.label3.TabIndex = 36;
-            this.label3.Text = "HP : 0";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.Font = new System.Drawing.Font("굴림", 15F);
-            this.label4.Location = new System.Drawing.Point(936, 1119);
-            this.label4.MaximumSize = new System.Drawing.Size(87, 25);
-            this.label4.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Location = new System.Drawing.Point(849, 834);
+            this.label4.MaximumSize = new System.Drawing.Size(76, 20);
+            this.label4.MinimumSize = new System.Drawing.Size(33, 10);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 25);
+            this.label4.Size = new System.Drawing.Size(33, 20);
             this.label4.TabIndex = 37;
-            this.label4.Text = "ATK : 0";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Control;
-            this.label5.Font = new System.Drawing.Font("굴림", 15F);
-            this.label5.Location = new System.Drawing.Point(1030, 1119);
-            this.label5.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label5.MinimumSize = new System.Drawing.Size(38, 12);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.Location = new System.Drawing.Point(940, 834);
+            this.label5.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label5.MinimumSize = new System.Drawing.Size(33, 10);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 25);
+            this.label5.Size = new System.Drawing.Size(33, 20);
             this.label5.TabIndex = 39;
-            this.label5.Text = "HP : 0";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.Control;
-            this.label6.Font = new System.Drawing.Font("굴림", 15F);
-            this.label6.Location = new System.Drawing.Point(1125, 1119);
-            this.label6.MaximumSize = new System.Drawing.Size(87, 25);
-            this.label6.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6.Location = new System.Drawing.Point(1014, 834);
+            this.label6.MaximumSize = new System.Drawing.Size(76, 20);
+            this.label6.MinimumSize = new System.Drawing.Size(33, 10);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 25);
+            this.label6.Size = new System.Drawing.Size(33, 20);
             this.label6.TabIndex = 38;
-            this.label6.Text = "ATK : 0";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.Control;
-            this.label7.Font = new System.Drawing.Font("굴림", 15F);
-            this.label7.Location = new System.Drawing.Point(1218, 1119);
-            this.label7.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label7.MinimumSize = new System.Drawing.Size(38, 12);
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7.Location = new System.Drawing.Point(1106, 834);
+            this.label7.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label7.MinimumSize = new System.Drawing.Size(33, 10);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 25);
+            this.label7.Size = new System.Drawing.Size(33, 20);
             this.label7.TabIndex = 41;
-            this.label7.Text = "HP : 0";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.Control;
-            this.label8.Font = new System.Drawing.Font("굴림", 15F);
-            this.label8.Location = new System.Drawing.Point(1314, 1119);
-            this.label8.MaximumSize = new System.Drawing.Size(87, 25);
-            this.label8.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8.Location = new System.Drawing.Point(1180, 834);
+            this.label8.MaximumSize = new System.Drawing.Size(76, 20);
+            this.label8.MinimumSize = new System.Drawing.Size(33, 10);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 25);
+            this.label8.Size = new System.Drawing.Size(33, 20);
             this.label8.TabIndex = 40;
-            this.label8.Text = "ATK : 0";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.SystemColors.Control;
-            this.label9.Font = new System.Drawing.Font("굴림", 15F);
-            this.label9.Location = new System.Drawing.Point(1409, 1119);
-            this.label9.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label9.MinimumSize = new System.Drawing.Size(38, 12);
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9.Location = new System.Drawing.Point(1273, 834);
+            this.label9.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label9.MinimumSize = new System.Drawing.Size(33, 10);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 25);
+            this.label9.Size = new System.Drawing.Size(33, 20);
             this.label9.TabIndex = 43;
-            this.label9.Text = "HP : 0";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.SystemColors.Control;
-            this.label10.Font = new System.Drawing.Font("굴림", 15F);
-            this.label10.Location = new System.Drawing.Point(1505, 1119);
-            this.label10.MaximumSize = new System.Drawing.Size(87, 25);
-            this.label10.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label10.Location = new System.Drawing.Point(1347, 834);
+            this.label10.MaximumSize = new System.Drawing.Size(76, 20);
+            this.label10.MinimumSize = new System.Drawing.Size(33, 10);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 25);
+            this.label10.Size = new System.Drawing.Size(33, 20);
             this.label10.TabIndex = 42;
-            this.label10.Text = "ATK : 0";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.SystemColors.Control;
-            this.label11.Font = new System.Drawing.Font("굴림", 15F);
-            this.label11.Location = new System.Drawing.Point(648, 441);
-            this.label11.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label11.MinimumSize = new System.Drawing.Size(38, 12);
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label11.Location = new System.Drawing.Point(609, 539);
+            this.label11.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label11.MinimumSize = new System.Drawing.Size(33, 10);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(68, 25);
+            this.label11.Size = new System.Drawing.Size(33, 20);
             this.label11.TabIndex = 44;
-            this.label11.Text = "HP : 0";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.SystemColors.Control;
-            this.label12.Font = new System.Drawing.Font("굴림", 15F);
-            this.label12.Location = new System.Drawing.Point(746, 441);
-            this.label12.MaximumSize = new System.Drawing.Size(105, 25);
-            this.label12.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label12.Location = new System.Drawing.Point(683, 539);
+            this.label12.MaximumSize = new System.Drawing.Size(92, 20);
+            this.label12.MinimumSize = new System.Drawing.Size(33, 10);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(94, 25);
+            this.label12.Size = new System.Drawing.Size(33, 20);
             this.label12.TabIndex = 45;
-            this.label12.Text = "ATK : 0";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // button11
             // 
             this.button11.AutoSize = true;
             this.button11.Font = new System.Drawing.Font("굴림", 15F);
-            this.button11.Location = new System.Drawing.Point(1615, 580);
+            this.button11.Location = new System.Drawing.Point(1413, 448);
             this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button11.MaximumSize = new System.Drawing.Size(183, 112);
-            this.button11.MinimumSize = new System.Drawing.Size(91, 56);
+            this.button11.MaximumSize = new System.Drawing.Size(160, 90);
+            this.button11.MinimumSize = new System.Drawing.Size(80, 45);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(183, 112);
+            this.button11.Size = new System.Drawing.Size(160, 90);
             this.button11.TabIndex = 46;
             this.button11.TabStop = false;
             this.button11.Text = "턴 종료";
@@ -433,143 +383,143 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.SystemColors.Control;
-            this.label13.Font = new System.Drawing.Font("굴림", 15F);
-            this.label13.Location = new System.Drawing.Point(840, 441);
-            this.label13.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label13.MinimumSize = new System.Drawing.Size(38, 12);
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label13.Location = new System.Drawing.Point(775, 539);
+            this.label13.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label13.MinimumSize = new System.Drawing.Size(33, 10);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 25);
+            this.label13.Size = new System.Drawing.Size(33, 20);
             this.label13.TabIndex = 47;
-            this.label13.Text = "HP : 0";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.SystemColors.Control;
-            this.label14.Font = new System.Drawing.Font("굴림", 15F);
-            this.label14.Location = new System.Drawing.Point(936, 441);
-            this.label14.MaximumSize = new System.Drawing.Size(105, 25);
-            this.label14.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label14.Location = new System.Drawing.Point(849, 539);
+            this.label14.MaximumSize = new System.Drawing.Size(92, 20);
+            this.label14.MinimumSize = new System.Drawing.Size(33, 10);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(94, 25);
+            this.label14.Size = new System.Drawing.Size(33, 20);
             this.label14.TabIndex = 48;
-            this.label14.Text = "ATK : 0";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.SystemColors.Control;
-            this.label15.Font = new System.Drawing.Font("굴림", 15F);
-            this.label15.Location = new System.Drawing.Point(1029, 441);
-            this.label15.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label15.MinimumSize = new System.Drawing.Size(38, 12);
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label15.Location = new System.Drawing.Point(940, 539);
+            this.label15.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label15.MinimumSize = new System.Drawing.Size(33, 10);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(68, 25);
+            this.label15.Size = new System.Drawing.Size(33, 20);
             this.label15.TabIndex = 49;
-            this.label15.Text = "HP : 0";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.SystemColors.Control;
-            this.label16.Font = new System.Drawing.Font("굴림", 15F);
-            this.label16.Location = new System.Drawing.Point(1125, 441);
-            this.label16.MaximumSize = new System.Drawing.Size(105, 25);
-            this.label16.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label16.Location = new System.Drawing.Point(1014, 539);
+            this.label16.MaximumSize = new System.Drawing.Size(92, 20);
+            this.label16.MinimumSize = new System.Drawing.Size(33, 10);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(94, 25);
+            this.label16.Size = new System.Drawing.Size(33, 20);
             this.label16.TabIndex = 50;
-            this.label16.Text = "ATK : 0";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.SystemColors.Control;
-            this.label17.Font = new System.Drawing.Font("굴림", 15F);
-            this.label17.Location = new System.Drawing.Point(1218, 441);
-            this.label17.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label17.MinimumSize = new System.Drawing.Size(38, 12);
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label17.Location = new System.Drawing.Point(1106, 539);
+            this.label17.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label17.MinimumSize = new System.Drawing.Size(33, 10);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(68, 25);
+            this.label17.Size = new System.Drawing.Size(33, 20);
             this.label17.TabIndex = 51;
-            this.label17.Text = "HP : 0";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.SystemColors.Control;
-            this.label18.Font = new System.Drawing.Font("굴림", 15F);
-            this.label18.Location = new System.Drawing.Point(1314, 441);
-            this.label18.MaximumSize = new System.Drawing.Size(105, 25);
-            this.label18.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label18.Location = new System.Drawing.Point(1180, 539);
+            this.label18.MaximumSize = new System.Drawing.Size(92, 20);
+            this.label18.MinimumSize = new System.Drawing.Size(33, 10);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(94, 25);
+            this.label18.Size = new System.Drawing.Size(33, 20);
             this.label18.TabIndex = 52;
-            this.label18.Text = "ATK : 0";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.SystemColors.Control;
-            this.label19.Font = new System.Drawing.Font("굴림", 15F);
-            this.label19.Location = new System.Drawing.Point(1409, 441);
-            this.label19.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label19.MinimumSize = new System.Drawing.Size(38, 12);
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label19.Location = new System.Drawing.Point(1273, 539);
+            this.label19.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label19.MinimumSize = new System.Drawing.Size(33, 10);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(68, 25);
+            this.label19.Size = new System.Drawing.Size(33, 20);
             this.label19.TabIndex = 53;
-            this.label19.Text = "HP : 0";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.SystemColors.Control;
-            this.label20.Font = new System.Drawing.Font("굴림", 15F);
-            this.label20.Location = new System.Drawing.Point(1505, 441);
-            this.label20.MaximumSize = new System.Drawing.Size(105, 25);
-            this.label20.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label20.Location = new System.Drawing.Point(1347, 539);
+            this.label20.MaximumSize = new System.Drawing.Size(92, 20);
+            this.label20.MinimumSize = new System.Drawing.Size(33, 10);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(94, 25);
+            this.label20.Size = new System.Drawing.Size(33, 20);
             this.label20.TabIndex = 54;
-            this.label20.Text = "ATK : 0";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.SystemColors.Control;
-            this.label21.Font = new System.Drawing.Font("굴림", 15F);
-            this.label21.Location = new System.Drawing.Point(648, 381);
-            this.label21.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label21.MinimumSize = new System.Drawing.Size(38, 12);
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label21.Location = new System.Drawing.Point(609, 260);
+            this.label21.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label21.MinimumSize = new System.Drawing.Size(33, 10);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(68, 25);
+            this.label21.Size = new System.Drawing.Size(33, 20);
             this.label21.TabIndex = 55;
-            this.label21.Text = "HP : 0";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.SystemColors.Control;
-            this.label22.Font = new System.Drawing.Font("굴림", 15F);
-            this.label22.Location = new System.Drawing.Point(746, 381);
-            this.label22.MaximumSize = new System.Drawing.Size(105, 25);
-            this.label22.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label22.Location = new System.Drawing.Point(683, 260);
+            this.label22.MaximumSize = new System.Drawing.Size(92, 20);
+            this.label22.MinimumSize = new System.Drawing.Size(33, 10);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(94, 25);
+            this.label22.Size = new System.Drawing.Size(33, 20);
             this.label22.TabIndex = 56;
-            this.label22.Text = "ATK : 0";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // button12
             // 
             this.button12.AutoSize = true;
             this.button12.Font = new System.Drawing.Font("굴림", 15F);
-            this.button12.Location = new System.Drawing.Point(1615, 969);
+            this.button12.Location = new System.Drawing.Point(1413, 759);
             this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button12.MaximumSize = new System.Drawing.Size(183, 112);
-            this.button12.MinimumSize = new System.Drawing.Size(91, 56);
+            this.button12.MaximumSize = new System.Drawing.Size(160, 90);
+            this.button12.MinimumSize = new System.Drawing.Size(80, 45);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(183, 112);
+            this.button12.Size = new System.Drawing.Size(160, 90);
             this.button12.TabIndex = 57;
             this.button12.TabStop = false;
             this.button12.Text = "카드 버리기\r\n3/3";
@@ -579,117 +529,117 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.SystemColors.Control;
-            this.label23.Font = new System.Drawing.Font("굴림", 15F);
-            this.label23.Location = new System.Drawing.Point(840, 381);
-            this.label23.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label23.MinimumSize = new System.Drawing.Size(38, 12);
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label23.Location = new System.Drawing.Point(775, 260);
+            this.label23.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label23.MinimumSize = new System.Drawing.Size(33, 10);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(68, 25);
+            this.label23.Size = new System.Drawing.Size(33, 20);
             this.label23.TabIndex = 58;
-            this.label23.Text = "HP : 0";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.SystemColors.Control;
-            this.label24.Font = new System.Drawing.Font("굴림", 15F);
-            this.label24.Location = new System.Drawing.Point(936, 381);
-            this.label24.MaximumSize = new System.Drawing.Size(105, 25);
-            this.label24.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label24.Location = new System.Drawing.Point(849, 260);
+            this.label24.MaximumSize = new System.Drawing.Size(92, 20);
+            this.label24.MinimumSize = new System.Drawing.Size(33, 10);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(94, 25);
+            this.label24.Size = new System.Drawing.Size(33, 20);
             this.label24.TabIndex = 59;
-            this.label24.Text = "ATK : 0";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.SystemColors.Control;
-            this.label25.Font = new System.Drawing.Font("굴림", 15F);
-            this.label25.Location = new System.Drawing.Point(1029, 381);
-            this.label25.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label25.MinimumSize = new System.Drawing.Size(38, 12);
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label25.Location = new System.Drawing.Point(940, 260);
+            this.label25.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label25.MinimumSize = new System.Drawing.Size(33, 10);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(68, 25);
+            this.label25.Size = new System.Drawing.Size(33, 20);
             this.label25.TabIndex = 60;
-            this.label25.Text = "HP : 0";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.SystemColors.Control;
-            this.label26.Font = new System.Drawing.Font("굴림", 15F);
-            this.label26.Location = new System.Drawing.Point(1125, 381);
-            this.label26.MaximumSize = new System.Drawing.Size(105, 25);
-            this.label26.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label26.Location = new System.Drawing.Point(1014, 260);
+            this.label26.MaximumSize = new System.Drawing.Size(92, 20);
+            this.label26.MinimumSize = new System.Drawing.Size(33, 10);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(94, 25);
+            this.label26.Size = new System.Drawing.Size(33, 20);
             this.label26.TabIndex = 61;
-            this.label26.Text = "ATK : 0";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.SystemColors.Control;
-            this.label27.Font = new System.Drawing.Font("굴림", 15F);
-            this.label27.Location = new System.Drawing.Point(1218, 381);
-            this.label27.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label27.MinimumSize = new System.Drawing.Size(38, 12);
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label27.Location = new System.Drawing.Point(1106, 260);
+            this.label27.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label27.MinimumSize = new System.Drawing.Size(33, 10);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(68, 25);
+            this.label27.Size = new System.Drawing.Size(33, 20);
             this.label27.TabIndex = 62;
-            this.label27.Text = "HP : 0";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.SystemColors.Control;
-            this.label28.Font = new System.Drawing.Font("굴림", 15F);
-            this.label28.Location = new System.Drawing.Point(1314, 381);
-            this.label28.MaximumSize = new System.Drawing.Size(105, 25);
-            this.label28.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label28.Location = new System.Drawing.Point(1180, 260);
+            this.label28.MaximumSize = new System.Drawing.Size(92, 20);
+            this.label28.MinimumSize = new System.Drawing.Size(33, 10);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(94, 25);
+            this.label28.Size = new System.Drawing.Size(33, 20);
             this.label28.TabIndex = 63;
-            this.label28.Text = "ATK : 0";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.SystemColors.Control;
-            this.label29.Font = new System.Drawing.Font("굴림", 15F);
-            this.label29.Location = new System.Drawing.Point(1409, 381);
-            this.label29.MaximumSize = new System.Drawing.Size(74, 25);
-            this.label29.MinimumSize = new System.Drawing.Size(38, 12);
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label29.Location = new System.Drawing.Point(1273, 260);
+            this.label29.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label29.MinimumSize = new System.Drawing.Size(33, 10);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(68, 25);
+            this.label29.Size = new System.Drawing.Size(33, 20);
             this.label29.TabIndex = 64;
-            this.label29.Text = "HP : 0";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.SystemColors.Control;
-            this.label30.Font = new System.Drawing.Font("굴림", 15F);
-            this.label30.Location = new System.Drawing.Point(1505, 381);
-            this.label30.MaximumSize = new System.Drawing.Size(105, 25);
-            this.label30.MinimumSize = new System.Drawing.Size(43, 12);
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label30.Location = new System.Drawing.Point(1347, 260);
+            this.label30.MaximumSize = new System.Drawing.Size(92, 20);
+            this.label30.MinimumSize = new System.Drawing.Size(33, 10);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(94, 25);
+            this.label30.Size = new System.Drawing.Size(33, 20);
             this.label30.TabIndex = 65;
-            this.label30.Text = "ATK : 0";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label31
             // 
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.SystemColors.Control;
             this.label31.Font = new System.Drawing.Font("굴림", 15F);
-            this.label31.Location = new System.Drawing.Point(1610, 239);
-            this.label31.MaximumSize = new System.Drawing.Size(126, 25);
-            this.label31.MinimumSize = new System.Drawing.Size(51, 12);
+            this.label31.Location = new System.Drawing.Point(1409, 191);
+            this.label31.MaximumSize = new System.Drawing.Size(110, 20);
+            this.label31.MinimumSize = new System.Drawing.Size(45, 10);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(101, 25);
+            this.label31.Size = new System.Drawing.Size(101, 20);
             this.label31.TabIndex = 66;
             this.label31.Text = "MyHP : 30";
             // 
@@ -698,11 +648,11 @@
             this.label32.AutoSize = true;
             this.label32.BackColor = System.Drawing.SystemColors.Control;
             this.label32.Font = new System.Drawing.Font("굴림", 15F);
-            this.label32.Location = new System.Drawing.Point(1610, 300);
-            this.label32.MaximumSize = new System.Drawing.Size(114, 25);
-            this.label32.MinimumSize = new System.Drawing.Size(46, 25);
+            this.label32.Location = new System.Drawing.Point(1409, 240);
+            this.label32.MaximumSize = new System.Drawing.Size(100, 20);
+            this.label32.MinimumSize = new System.Drawing.Size(40, 20);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(89, 25);
+            this.label32.Size = new System.Drawing.Size(91, 20);
             this.label32.TabIndex = 67;
             this.label32.Text = "AiHP : 30";
             // 
@@ -710,30 +660,31 @@
             // 
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("굴림", 13F);
-            this.textBox1.Location = new System.Drawing.Point(201, 101);
+            this.textBox1.Location = new System.Drawing.Point(176, 81);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.MaximumSize = new System.Drawing.Size(420, 1042);
-            this.textBox1.MinimumSize = new System.Drawing.Size(210, 395);
+            this.textBox1.MaximumSize = new System.Drawing.Size(368, 834);
+            this.textBox1.MinimumSize = new System.Drawing.Size(184, 317);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(420, 395);
+            this.textBox1.Size = new System.Drawing.Size(368, 317);
             this.textBox1.TabIndex = 68;
             // 
             // textBox2
             // 
             this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("굴림", 13F);
-            this.textBox2.Location = new System.Drawing.Point(391, 638);
+            this.textBox2.Location = new System.Drawing.Point(342, 510);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(230, 276);
+            this.textBox2.Size = new System.Drawing.Size(202, 222);
             this.textBox2.TabIndex = 70;
             // 
             // pictureBox11
             // 
             this.pictureBox11.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox11.Location = new System.Drawing.Point(202, 638);
+            this.pictureBox11.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.pictureBox11.Location = new System.Drawing.Point(177, 510);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox11.MaximumSize = new System.Drawing.Size(320, 444);
             this.pictureBox11.MinimumSize = new System.Drawing.Size(80, 111);
@@ -746,7 +697,8 @@
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox9.Location = new System.Drawing.Point(1218, 101);
+            this.pictureBox9.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.pictureBox9.Location = new System.Drawing.Point(1066, 81);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox9.MaximumSize = new System.Drawing.Size(160, 222);
             this.pictureBox9.MinimumSize = new System.Drawing.Size(80, 111);
@@ -759,7 +711,8 @@
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox10.Location = new System.Drawing.Point(1409, 101);
+            this.pictureBox10.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.pictureBox10.Location = new System.Drawing.Point(1233, 81);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.MaximumSize = new System.Drawing.Size(160, 222);
             this.pictureBox10.MinimumSize = new System.Drawing.Size(80, 111);
@@ -772,7 +725,8 @@
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox8.Location = new System.Drawing.Point(1029, 101);
+            this.pictureBox8.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.pictureBox8.Location = new System.Drawing.Point(900, 81);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.MaximumSize = new System.Drawing.Size(160, 222);
             this.pictureBox8.MinimumSize = new System.Drawing.Size(80, 111);
@@ -785,7 +739,8 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox7.Location = new System.Drawing.Point(840, 101);
+            this.pictureBox7.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.pictureBox7.Location = new System.Drawing.Point(735, 81);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.MaximumSize = new System.Drawing.Size(160, 222);
             this.pictureBox7.MinimumSize = new System.Drawing.Size(80, 111);
@@ -798,7 +753,8 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox6.Location = new System.Drawing.Point(650, 101);
+            this.pictureBox6.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.pictureBox6.Location = new System.Drawing.Point(569, 81);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.MaximumSize = new System.Drawing.Size(160, 222);
             this.pictureBox6.MinimumSize = new System.Drawing.Size(80, 111);
@@ -811,7 +767,8 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox5.Location = new System.Drawing.Point(1409, 470);
+            this.pictureBox5.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.pictureBox5.Location = new System.Drawing.Point(1233, 360);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.MaximumSize = new System.Drawing.Size(160, 222);
             this.pictureBox5.MinimumSize = new System.Drawing.Size(80, 111);
@@ -826,7 +783,8 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox4.Location = new System.Drawing.Point(1218, 470);
+            this.pictureBox4.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.pictureBox4.Location = new System.Drawing.Point(1066, 360);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.MaximumSize = new System.Drawing.Size(160, 222);
             this.pictureBox4.MinimumSize = new System.Drawing.Size(80, 111);
@@ -841,7 +799,8 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox3.Location = new System.Drawing.Point(1029, 470);
+            this.pictureBox3.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.pictureBox3.Location = new System.Drawing.Point(900, 360);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.MaximumSize = new System.Drawing.Size(160, 222);
             this.pictureBox3.MinimumSize = new System.Drawing.Size(80, 111);
@@ -856,7 +815,8 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox2.Location = new System.Drawing.Point(840, 470);
+            this.pictureBox2.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.pictureBox2.Location = new System.Drawing.Point(735, 360);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.MaximumSize = new System.Drawing.Size(160, 222);
             this.pictureBox2.MinimumSize = new System.Drawing.Size(80, 111);
@@ -870,8 +830,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.Location = new System.Drawing.Point(650, 470);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.pictureBox1.Location = new System.Drawing.Point(569, 360);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.MaximumSize = new System.Drawing.Size(160, 222);
             this.pictureBox1.MinimumSize = new System.Drawing.Size(80, 111);
@@ -883,13 +844,106 @@
             this.pictureBox1.Click += new System.EventHandler(this.MagicClick);
             this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FieldCard_Info1);
             // 
+            // button5
+            // 
+            this.button5.AutoSize = true;
+            this.button5.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.button5.Location = new System.Drawing.Point(1233, 655);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.MaximumSize = new System.Drawing.Size(160, 222);
+            this.button5.MinimumSize = new System.Drawing.Size(80, 111);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(160, 222);
+            this.button5.TabIndex = 6;
+            this.button5.TabStop = false;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Card5_button);
+            // 
+            // button4
+            // 
+            this.button4.AutoSize = true;
+            this.button4.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.button4.Location = new System.Drawing.Point(1066, 655);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.MaximumSize = new System.Drawing.Size(160, 222);
+            this.button4.MinimumSize = new System.Drawing.Size(80, 111);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(160, 222);
+            this.button4.TabIndex = 3;
+            this.button4.TabStop = false;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Card4_button);
+            // 
+            // button3
+            // 
+            this.button3.AutoSize = true;
+            this.button3.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.button3.Location = new System.Drawing.Point(900, 655);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.MaximumSize = new System.Drawing.Size(160, 222);
+            this.button3.MinimumSize = new System.Drawing.Size(80, 111);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(160, 222);
+            this.button3.TabIndex = 2;
+            this.button3.TabStop = false;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Card3_button);
+            // 
+            // button2
+            // 
+            this.button2.AutoSize = true;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.Image = global::C3_Form_testing.Properties.Resources.nullCard;
+            this.button2.Location = new System.Drawing.Point(735, 655);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.MaximumSize = new System.Drawing.Size(160, 222);
+            this.button2.MinimumSize = new System.Drawing.Size(80, 111);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(160, 222);
+            this.button2.TabIndex = 1;
+            this.button2.TabStop = false;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Card2_button);
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label33.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label33.Location = new System.Drawing.Point(217, 689);
+            this.label33.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label33.MinimumSize = new System.Drawing.Size(33, 10);
+            this.label33.Name = "label33";
+            this.label33.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label33.Size = new System.Drawing.Size(33, 20);
+            this.label33.TabIndex = 71;
+            this.label33.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label34.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label34.Location = new System.Drawing.Point(291, 689);
+            this.label34.MaximumSize = new System.Drawing.Size(65, 20);
+            this.label34.MinimumSize = new System.Drawing.Size(33, 10);
+            this.label34.Name = "label34";
+            this.label34.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label34.Size = new System.Drawing.Size(33, 20);
+            this.label34.TabIndex = 72;
+            this.label34.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.label33);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.textBox1);
@@ -950,7 +1004,7 @@
             this.Controls.Add(this.button1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MinimumSize = new System.Drawing.Size(1440, 698);
+            this.MinimumSize = new System.Drawing.Size(1262, 566);
             this.Name = "Form1";
             this.Text = "전투 페이지";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1031,6 +1085,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
     }
 }
 
