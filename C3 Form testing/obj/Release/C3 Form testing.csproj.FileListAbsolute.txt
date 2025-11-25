@@ -1,0 +1,11 @@
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 14\C3 Form testing\bin\Release\C3 Form testing.exe.config
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 14\C3 Form testing\bin\Release\C3 Form testing.exe
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 14\C3 Form testing\bin\Release\C3 Form testing.pdb
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 14\C3 Form testing\obj\Release\C3 Form testing.csproj.AssemblyReference.cache
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 14\C3 Form testing\obj\Release\C3 Form testing.csproj.SuggestedBindingRedirects.cache
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 14\C3 Form testing\obj\Release\C3_Form_testing.Form1.resources
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 14\C3 Form testing\obj\Release\C3_Form_testing.Properties.Resources.resources
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 14\C3 Form testing\obj\Release\C3 Form testing.csproj.GenerateResource.cache
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 14\C3 Form testing\obj\Release\C3 Form testing.csproj.CoreCompileInputs.cache
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 14\C3 Form testing\obj\Release\C3 Form testing.exe
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 14\C3 Form testing\obj\Release\C3 Form testing.pdb

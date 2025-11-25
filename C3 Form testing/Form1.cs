@@ -29,12 +29,11 @@ namespace C3_Form_testing
             return DateTime.Now;
         }
         Random HP_point = new Random(); Random ATK_point = new Random();
-        Random Card_Number = new Random(); Random MagicATK_point = new Random();
+        Random Card_Number = new Random(); Random Magic_point = new Random();
         public int MyHp = 50, AiHp = 50, DeleteCardcount = 3;
         public int Magicbool1 = 0, Magicbool2 = 0, Magicbool3 = 0, Magicbool4 = 0, Magicbool5 = 0,
                    Handbool1 = 0, Handbool2 = 0, Handbool3 = 0, Handbool4 = 0, Handbool5 = 0,
                    Fieldbool1 = 0, Fieldbool2 = 0, Fieldbool3 = 0, Fieldbool4 = 0, Fieldbool5 = 0,
-                   Addbool1 = 0, Addbool2 = 0, Addbool3 = 0, Addbool4 = 0, Addbool5 = 0,
                    AiFieldbool1 = 0, AiFieldbool2 = 0, AiFieldbool3 = 0, AiFieldbool4 = 0, AiFieldbool5 = 0;
         public Image NullCard = Properties.Resources.nullCard;
         struct Information_Card
@@ -49,12 +48,14 @@ namespace C3_Form_testing
         { public int Magic_status; }
         struct Card
         {
-            public int ATK, AiATK, HP, AiHP, keycode, Aikeycode, MagicATK;
+            public int ATK, AiATK, HP, AiHP, keycode, Aikeycode, MagicATK, MagicHP;
             public Image MonsterCardcode, AiMonsterCardcode, MagicCardcode;
         }
-        Card[] CardDB = new Card[11]; MyFieldCardstatus[] MyField_status = new MyFieldCardstatus[6];
-        MyCardstatus[] Mycardstatus = new MyCardstatus[6]; AiCardstatus[] Aicardstatus = new AiCardstatus[6];
-        Information_Card[] Info_Card = new Information_Card[6]; MagicCardstsatus[] Magicstatus = new MagicCardstsatus[6];
+        Card[] CardDB = new Card[11]; Information_Card[] Info_Card = new Information_Card[6];
+        MyCardstatus[] Mycardstatus = new MyCardstatus[6]; 
+        AiCardstatus[] Aicardstatus = new AiCardstatus[6];
+        MyFieldCardstatus[] MyField_status = new MyFieldCardstatus[6];
+        MagicCardstsatus[] Magicstatus = new MagicCardstsatus[6];
         public void MyCardcodesetting()
         {
             CardDB[0].MonsterCardcode = Properties.Resources.MonsterCard1;
@@ -81,7 +82,7 @@ namespace C3_Form_testing
             for (int i = 0; i <= 9; i++)
             {
                 CardDB[i].ATK = ATK_point.Next(1, 7); CardDB[i].HP = HP_point.Next(1, 10);
-                CardDB[i].MagicATK = MagicATK_point.Next(1, 5); CardDB[i].keycode = i;
+                CardDB[i].MagicATK = i; CardDB[i].keycode = i; CardDB[i].MagicHP = i;
             }
         }
         public void AiCardcodesetting()
@@ -179,11 +180,23 @@ namespace C3_Form_testing
                             Mycardstatus[0].MyHP_status = CardDB[j].HP; Mycardstatus[0].MyATK_status = CardDB[j].ATK;
                         }
                         if(CardChoice1 >= 7)
-                        {
-                            button1.Image = CardDB[j].MagicCardcode; Handbool1 = 1; Magicbool1 = 1;
-                            Magicstatus[0].Magic_status = CardDB[j].MagicATK;
-                            label1.Text = ""; label2.Text = "" + CardDB[j].MagicATK;
-                            Info_Card[0].Info_Hand += "\r\n공격력 증가 : " + CardDB[j].MagicATK;
+                        {// 11 - 15 : 마법카드 체력, 공격력 1~5 고정시켜 출력하기
+                            int MagicChoice1 = Magic_point.Next(0, 9), HPATK_up = Magic_point.Next(1, 5);
+                            if(MagicChoice1 <= 4)
+                            {
+                                button1.Image = CardDB[HPATK_up].MagicCardcode; Handbool1 = 1; Magicbool1 = 1;
+                                Magicstatus[0].Magic_status = CardDB[HPATK_up].MagicATK;
+                                label1.Text = ""; label2.Text = "" + CardDB[HPATK_up].MagicATK;
+                                Info_Card[0].Info_Hand += "\r\n공격력 증가 : " + CardDB[HPATK_up].MagicATK;
+                            }
+                            if(MagicChoice1 >= 5)
+                            {
+                                button1.Image = CardDB[HPATK_up].MagicCardcode; Handbool1 = 1; Magicbool1 = 2;
+                                Magicstatus[0].Magic_status = CardDB[HPATK_up].MagicHP;
+                                label1.Text = "" + CardDB[HPATK_up].MagicHP; label2.Text = "";
+                                Info_Card[0].Info_Hand += "\r\n체력 증가 : " + CardDB[HPATK_up].MagicHP;
+                            }
+                            
                         }
                     }
                     if (Handbool2 == 0 && CardDB[j].keycode == mycard2)
@@ -196,10 +209,21 @@ namespace C3_Form_testing
                         }
                         if(CardChoice2 >= 7)
                         {
-                            button2.Image = CardDB[j].MagicCardcode; Handbool2 = 1;  Magicbool2 = 1;
-                            Magicstatus[1].Magic_status = CardDB[j].MagicATK;
-                            label3.Text = ""; label4.Text = "" + CardDB[j].MagicATK;
-                            Info_Card[1].Info_Hand += "\r\n공격력 증가 : " + CardDB[j].MagicATK;
+                            int MagicChoice2 = Magic_point.Next(0, 9), HPATK_up = Magic_point.Next(1, 5);
+                            if(MagicChoice2 <= 4)
+                            {
+                                button2.Image = CardDB[HPATK_up].MagicCardcode; Handbool2 = 1; Magicbool2 = 1;
+                                Magicstatus[1].Magic_status = CardDB[HPATK_up].MagicATK;
+                                label3.Text = ""; label4.Text = "" + CardDB[HPATK_up].MagicATK;
+                                Info_Card[1].Info_Hand += "\r\n공격력 증가 : " + CardDB[HPATK_up].MagicATK;
+                            }
+                            if(MagicChoice2 >= 5)
+                            {
+                                button2.Image = CardDB[HPATK_up].MagicCardcode; Handbool2 = 1; Magicbool2 = 2;
+                                Magicstatus[1].Magic_status = CardDB[HPATK_up].MagicHP;
+                                label3.Text = "" + CardDB[HPATK_up].MagicHP; label4.Text = "";
+                                Info_Card[1].Info_Hand += "\r\n체력 증가 : " + CardDB[HPATK_up].MagicHP;
+                            }
                         }
                     }
                     if (Handbool3 == 0 && CardDB[j].keycode == mycard3)
@@ -212,10 +236,21 @@ namespace C3_Form_testing
                         }
                         if(CardChoice3 >= 7)
                         {
-                            button3.Image = CardDB[j].MagicCardcode; Handbool3 = 1; Magicbool3 = 1;
-                            Magicstatus[2].Magic_status = CardDB[j].MagicATK;
-                            label5.Text = ""; label6.Text = "" + CardDB[j].MagicATK;
-                            Info_Card[2].Info_Hand += "\r\n공격력 증가 : " + CardDB[j].MagicATK;
+                            int MagicChoice3 = Magic_point.Next(0, 9), HPATK_up = Magic_point.Next(1, 5);
+                            if (MagicChoice3 <= 4)
+                            {
+                                button3.Image = CardDB[HPATK_up].MagicCardcode; Handbool3 = 1; Magicbool3 = 1;
+                                Magicstatus[2].Magic_status = CardDB[HPATK_up].MagicATK;
+                                label5.Text = ""; label6.Text = "" + CardDB[HPATK_up].MagicATK;
+                                Info_Card[2].Info_Hand += "\r\n공격력 증가 : " + CardDB[HPATK_up].MagicATK;
+                            }
+                            if(MagicChoice3 >= 5)
+                            {
+                                button3.Image = CardDB[HPATK_up].MagicCardcode; Handbool3 = 1; Magicbool3 = 2;
+                                Magicstatus[2].Magic_status = CardDB[HPATK_up].MagicHP;
+                                label5.Text = "" + CardDB[HPATK_up].MagicHP; label6.Text = "";
+                                Info_Card[2].Info_Hand += "\r\n체력 증가 : " + CardDB[HPATK_up].MagicHP;
+                            }
                         }
                     }
                     if (Handbool4 == 0 && CardDB[j].keycode == mycard4)
@@ -228,10 +263,21 @@ namespace C3_Form_testing
                         }
                         if(CardChoice4 >= 7)
                         {
-                            button4.Image = CardDB[j].MagicCardcode; Handbool4 = 1; Magicbool4 = 1;
-                            Magicstatus[3].Magic_status = CardDB[j].MagicATK;
-                            label7.Text = ""; label8.Text = "" + CardDB[j].MagicATK;
-                            Info_Card[3].Info_Hand += "\r\n공격력 증가 : " + CardDB[j].MagicATK;
+                            int MagicChoice4 = Magic_point.Next(0, 9), HPATK_up = Magic_point.Next(1, 5);
+                            if (MagicChoice4 <= 4)
+                            {
+                                button4.Image = CardDB[HPATK_up].MagicCardcode; Handbool4 = 1; Magicbool4 = 1;
+                                Magicstatus[3].Magic_status = CardDB[HPATK_up].MagicATK;
+                                label7.Text = ""; label8.Text = "" + CardDB[HPATK_up].MagicATK;
+                                Info_Card[3].Info_Hand += "\r\n공격력 증가 : " + CardDB[HPATK_up].MagicATK;
+                            }
+                            if(MagicChoice4 >= 5)
+                            {
+                                button4.Image = CardDB[HPATK_up].MagicCardcode; Handbool4 = 1; Magicbool4 = 2;
+                                Magicstatus[3].Magic_status = CardDB[HPATK_up].MagicHP;
+                                label7.Text = "" + CardDB[HPATK_up].MagicHP; label8.Text = "";
+                                Info_Card[3].Info_Hand += "\r\n체력 증가 : " + CardDB[HPATK_up].MagicHP;
+                            }
                         }
                     }
                     if (Handbool5 == 0 && CardDB[j].keycode == mycard5)
@@ -244,10 +290,21 @@ namespace C3_Form_testing
                         }
                         if(CardChoice5 >= 7)
                         {
-                            button5.Image = CardDB[j].MagicCardcode; Handbool5 = 1; Magicbool5 = 1;
-                            Magicstatus[4].Magic_status = CardDB[j].MagicATK;
-                            label9.Text = ""; label10.Text = "" + CardDB[j].MagicATK;
-                            Info_Card[4].Info_Hand += "\r\n공격력 증가 : " + CardDB[j].MagicATK;
+                            int MagicChoice5 = Magic_point.Next(0, 9), HPATK_up = Magic_point.Next(1, 5);
+                            if (MagicChoice5 <= 4)
+                            {
+                                button5.Image = CardDB[HPATK_up].MagicCardcode; Handbool5 = 1; Magicbool5 = 1;
+                                Magicstatus[4].Magic_status = CardDB[HPATK_up].MagicATK;
+                                label9.Text = ""; label10.Text = "" + CardDB[HPATK_up].MagicATK;
+                                Info_Card[4].Info_Hand += "\r\n공격력 증가 : " + CardDB[HPATK_up].MagicATK;
+                            }
+                            if(MagicChoice5 >= 5)
+                            {
+                                button5.Image = CardDB[HPATK_up].MagicCardcode; Handbool5 = 1; Magicbool5 = 2;
+                                Magicstatus[4].Magic_status = CardDB[HPATK_up].MagicHP;
+                                label9.Text = "" + CardDB[HPATK_up].MagicHP; label10.Text = "";
+                                Info_Card[4].Info_Hand += "\r\n체력 증가 : " + CardDB[HPATK_up].MagicHP;
+                            }
                         }
                     }
                 }
@@ -301,6 +358,8 @@ namespace C3_Form_testing
                 button11.Visible = false; button20.Visible = false; button12.Visible = false;
                 button6.Visible = false; button7.Visible = false; button8.Visible = false;
                 button9.Visible = false; button10.Visible = false;
+                button1.Visible = false; button2.Visible = false; button3.Visible = false;
+                button4.Visible = false; button5.Visible = false;
                 AiCardcodesetting();
                 for (int j = 0; j <= 9; j++)
                 {
@@ -370,7 +429,6 @@ namespace C3_Form_testing
                     label21.Text = "" + Aicardstatus[0].AiHP_status;
                     textBox1.Text += "\r\n첫번째 칸 적몬스터 -> 내몬스터 " + Aicardstatus[0].AiATK_status + "피해";
                     textBox1.Text += "\r\n첫번째 칸 내몬스터 -> 적몬스터 " + MyField_status[0].FieldATK_status + "피해\r\n";
-
                     if (MyField_status[0].FieldHP_status <= 0)
                     {
                         pictureBox1.Image = NullCard; Info_Card[0].Info_Field = ""; Fieldbool1 = 0;
@@ -502,6 +560,8 @@ namespace C3_Form_testing
                 button6.Visible = true; button7.Visible = true; button8.Visible = true; 
                 button9.Visible = true; button10.Visible = true; button20.Enabled = true;
                 button11.Visible = true; button12.Visible = true; button20.Visible = true;
+                button1.Visible = true; button2.Visible = true; button3.Visible = true;
+                button4.Visible = true; button5.Visible = true;
                 if(MyHp <= 0)
                 { MessageBox.Show("플레이어가 졌습니다!"); this.Close(); }
                 else if(AiHp <= 0)
@@ -556,7 +616,7 @@ namespace C3_Form_testing
                     label7.Text = ""; label8.Text = "";
                     button6.Text = "필드에 카드가 있습니다";
                 }
-                if (button5.Enabled == false && Handbool5 == 1 && Magicbool5 == 0)
+                if (button5.Enabled == false && Magicbool5 == 0)
                 {
                     pictureBox1.Image = button5.Image; Handbool5 = 0; Fieldbool1 = 1;
                     label11.Text = label9.Text; label12.Text = label10.Text;
@@ -568,59 +628,108 @@ namespace C3_Form_testing
                     button6.Text = "필드에 카드가 있습니다";
                 }
 
-                if (button1.Enabled == false && Magicbool1 == 1)
+                if(button1.Enabled == false && Magicbool1 > 0)
                 {
+                    if (Magicbool1 == 1)
+                    {
+                        MyField_status[0].FieldATK_status += Magicstatus[0].Magic_status;
+                        label12.Text = "" + MyField_status[0].FieldATK_status;
+                        textBox1.Text = "첫번째 필드 카드에 공격력 " + Magicstatus[0].Magic_status + "를 더한다";
+                        Info_Card[0].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[0].Magic_status + "증가";
+                    }
+                    if (Magicbool1 == 2)
+                    {
+                        MyField_status[0].FieldHP_status += Magicstatus[0].Magic_status;
+                        label11.Text = "" + MyField_status[0].FieldHP_status;
+                        textBox1.Text = "첫번째 필드 카드에 체력 " + Magicstatus[0].Magic_status + "를 더한다";
+                        Info_Card[0].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[0].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool1 = 0; Magicbool1 = 0;
-                    textBox2.Text = ""; Info_Card[0].Info_Hand = "";
-                    button1.Image = NullCard; label1.Text = ""; label2.Text = "";
-                    MyField_status[0].FieldATK_status += Magicstatus[0].Magic_status;
-                    label12.Text = "ATK : " + MyField_status[0].FieldATK_status;
-                    textBox1.Text = "첫번째 필드 카드에 공격력 " + Magicstatus[0].Magic_status + "를 더한다";
-                    Info_Card[0].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[0].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[0].Info_Hand = ""; button1.Image = NullCard; 
+                    label1.Text = ""; label2.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button2.Enabled == false && Magicbool2 == 1)
+                if(button2.Enabled == false && Magicbool2 > 0)
                 {
+                    if (Magicbool2 == 1)
+                    {
+                        MyField_status[0].FieldATK_status += Magicstatus[1].Magic_status;
+                        label12.Text = "" + MyField_status[0].FieldATK_status;
+                        textBox1.Text = "첫번째 필드 카드에 공격력 " + Magicstatus[1].Magic_status + "를 더한다";
+                        Info_Card[0].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[1].Magic_status + "증가";
+                    }
+                    if (Magicbool2 == 2)
+                    {
+                        MyField_status[0].FieldHP_status += Magicstatus[1].Magic_status;
+                        label11.Text = "" + MyField_status[0].FieldHP_status;
+                        textBox1.Text = "첫번째 필드 카드에 체력 " + Magicstatus[1].Magic_status + "를 더한다";
+                        Info_Card[0].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[1].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool2 = 0; Magicbool2 = 0;
-                    textBox2.Text = ""; Info_Card[1].Info_Hand = "";
-                    button2.Image = NullCard; label3.Text = ""; label4.Text = "";
-                    MyField_status[0].FieldATK_status += Magicstatus[1].Magic_status;
-                    label12.Text = "" + MyField_status[0].FieldATK_status;
-                    textBox1.Text = "첫번째 필드 카드에 공격력 " + Magicstatus[1].Magic_status + "를 더한다";
-                    Info_Card[0].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[1].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[1].Info_Hand = ""; button2.Image = NullCard; 
+                    label3.Text = ""; label4.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button3.Enabled == false && Magicbool3 == 1)
+                if(button3.Enabled == false && Magicbool3 > 0)
                 {
+                    if (Magicbool3 == 1)
+                    {
+                        MyField_status[0].FieldATK_status += Magicstatus[2].Magic_status;
+                        label12.Text = "" + MyField_status[0].FieldATK_status;
+                        textBox1.Text = "첫번째 필드 카드에 공격력 " + Magicstatus[2].Magic_status + "를 더한다";
+                        Info_Card[0].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[2].Magic_status + "증가";
+                    }
+                    if (Magicbool3 == 2)
+                    {
+                        MyField_status[0].FieldHP_status += Magicstatus[2].Magic_status;
+                        label11.Text = "" + MyField_status[0].FieldHP_status;
+                        textBox1.Text = "첫번째 필드 카드에 체력 " + Magicstatus[2].Magic_status + "를 더한다";
+                        Info_Card[0].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[2].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool3 = 0; Magicbool3 = 0;
-                    textBox2.Text = ""; Info_Card[2].Info_Hand = "";
-                    button3.Image = NullCard; label5.Text = ""; label6.Text = "";
-                    MyField_status[0].FieldATK_status += Magicstatus[2].Magic_status;
-                    label12.Text = "" + MyField_status[0].FieldATK_status;
-                    textBox1.Text = "첫번째 필드 카드에 공격력 " + Magicstatus[2].Magic_status + "를 더한다";
-                    Info_Card[0].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[2].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[2].Info_Hand = ""; button3.Image = NullCard;
+                    label5.Text = ""; label6.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button4.Enabled == false && Magicbool4 == 1)
+                if(button4.Enabled == false && Magicbool4 > 0)
                 {
+                    if (Magicbool4 == 1)
+                    {
+                        MyField_status[0].FieldATK_status += Magicstatus[3].Magic_status;
+                        label12.Text = "" + MyField_status[0].FieldATK_status;
+                        textBox1.Text = "첫번째 필드 카드에 공격력 " + Magicstatus[3].Magic_status + "를 더한다";
+                        Info_Card[0].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[3].Magic_status + "증가";
+                    }
+                    if (Magicbool4 == 2)
+                    {
+                        MyField_status[0].FieldHP_status += Magicstatus[3].Magic_status;
+                        label11.Text = "" + MyField_status[0].FieldHP_status;
+                        textBox1.Text = "첫번째 필드 카드에 체력 " + Magicstatus[3].Magic_status + "를 더한다";
+                        Info_Card[0].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[3].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool4 = 0; Magicbool4 = 0;
-                    textBox2.Text = ""; Info_Card[3].Info_Hand = "";
-                    button4.Image = NullCard; label7.Text = ""; label8.Text = "";
-                    MyField_status[0].FieldATK_status += Magicstatus[3].Magic_status;
-                    label12.Text = "" + MyField_status[0].FieldATK_status;
-                    textBox1.Text = "첫번째 필드 카드에 공격력 " + Magicstatus[3].Magic_status + "를 더한다";
-                    Info_Card[0].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[3].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[3].Info_Hand = ""; button4.Image = NullCard; 
+                    label7.Text = ""; label8.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button5.Enabled == false && Magicbool5 == 1)
+                if(button5.Enabled == false && Magicbool5 > 0)
                 {
+                    if (Magicbool5 == 1)
+                    {
+                        MyField_status[0].FieldATK_status += Magicstatus[4].Magic_status;
+                        label12.Text = "" + MyField_status[0].FieldATK_status;
+                        textBox1.Text = "첫번째 필드 카드에 공격력 " + Magicstatus[4].Magic_status + "를 더한다";
+                        Info_Card[0].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[4].Magic_status + "증가";
+                    }
+                    if (Magicbool5 == 2)
+                    {
+                        MyField_status[0].FieldHP_status += Magicstatus[4].Magic_status;
+                        label11.Text = "" + MyField_status[0].FieldHP_status;
+                        textBox1.Text = "첫번째 필드 카드에 체력 " + Magicstatus[4].Magic_status + "를 더한다";
+                        Info_Card[0].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[4].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool5 = 0; Magicbool5 = 0;
-                    textBox2.Text = ""; Info_Card[4].Info_Hand = "";
-                    button5.Image = NullCard; label9.Text = ""; label10.Text = "";
-                    MyField_status[0].FieldATK_status += Magicstatus[4].Magic_status;
-                    label12.Text = "" + MyField_status[0].FieldATK_status;
-                    textBox1.Text = "첫번째 필드 카드에 공격력 " + Magicstatus[4].Magic_status + "를 더한다";
-                    Info_Card[0].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[4].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[4].Info_Hand = ""; button5.Image = NullCard; 
+                    label9.Text = ""; label10.Text = ""; label33.Text = ""; label34.Text = "";
                 }
                 Card_FieldFull_Fieldnull(); buttonTrue_False();
             }
-
             if (button12.Visible == false && e.Button == MouseButtons.Left)
             {
                 if (Fieldbool1 == 1)
@@ -692,55 +801,105 @@ namespace C3_Form_testing
                     button7.Text = "필드에 카드가 있습니다";
                 }
 
-                if (button1.Enabled == false && Magicbool1 == 1)
+                if(button1.Enabled == false && Magicbool1 > 0)
                 {
+                    if (Magicbool1 == 1)
+                    {
+                        MyField_status[1].FieldATK_status += Magicstatus[0].Magic_status;
+                        label14.Text = "" + MyField_status[1].FieldATK_status;
+                        textBox1.Text = "두번째 필드 카드에 공격력" + Magicstatus[0].Magic_status + "를 더한다";
+                        Info_Card[1].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[0].Magic_status + "증가";
+                    }
+                    if(Magicbool1 == 2)
+                    {
+                        MyField_status[1].FieldATK_status += Magicstatus[0].Magic_status;
+                        label13.Text = "" + MyField_status[1].FieldHP_status;
+                        textBox1.Text = "두번째 필드 카드에 체력" + Magicstatus[0].Magic_status + "를 더한다";
+                        Info_Card[1].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[0].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool1 = 0; Magicbool1 = 0;
-                    textBox2.Text = ""; Info_Card[0].Info_Hand = "";
-                    button1.Image = NullCard; ; label1.Text = ""; label2.Text = "";
-                    MyField_status[1].FieldATK_status += Magicstatus[0].Magic_status;
-                    label14.Text = "" + MyField_status[1].FieldATK_status;
-                    textBox1.Text = "두번째 필드 카드에 공격력" + Magicstatus[0].Magic_status + "를 더한다";
-                    Info_Card[1].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[0].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[0].Info_Hand = ""; button1.Image = NullCard; 
+                    label1.Text = ""; label2.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button2.Enabled == false && Magicbool2 == 1)
+                if(button2.Enabled == false && Magicbool2 > 0)
                 {
+                    if (Magicbool2 == 1)
+                    {
+                        MyField_status[1].FieldHP_status += Magicstatus[1].Magic_status;
+                        label14.Text = "" + MyField_status[1].FieldATK_status;
+                        textBox1.Text = "두번째 필드 카드에 공격력 " + Magicstatus[1].Magic_status + "를 더한다";
+                        Info_Card[1].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[1].Magic_status + "증가";
+                    }
+                    if(Magicbool2 == 2)
+                    {
+                        MyField_status[1].FieldHP_status += Magicstatus[1].Magic_status;
+                        label13.Text = "" + MyField_status[1].FieldHP_status;
+                        textBox1.Text = "두번째 필드 카드에 체력 " + Magicstatus[1].Magic_status + "를 더한다";
+                        Info_Card[1].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[1].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool2 = 0; Magicbool2 = 0;
-                    textBox2.Text = ""; Info_Card[1].Info_Hand = "";
-                    button2.Image = NullCard; label3.Text = ""; label4.Text = "";
-                    MyField_status[1].FieldATK_status += Magicstatus[1].Magic_status;
-                    label14.Text = "" + MyField_status[1].FieldATK_status;
-                    textBox1.Text = "두번째 필드 카드에 공격력 " + Magicstatus[1].Magic_status + "를 더한다";
-                    Info_Card[1].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[1].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[1].Info_Hand = ""; button2.Image = NullCard; 
+                    label3.Text = ""; label4.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button3.Enabled == false && Magicbool3 == 1)
+                if(button3.Enabled == false && Magicbool3 > 0)
                 {
+                    if (Magicbool3 == 1)
+                    {
+                        MyField_status[1].FieldATK_status += Magicstatus[2].Magic_status;
+                        label14.Text = "" + MyField_status[1].FieldATK_status;
+                        textBox1.Text = "두번째 필드 카드에 공격력 " + Magicstatus[2].Magic_status + "를 더한다";
+                        Info_Card[1].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[2].Magic_status + "증가";
+                    }
+                    if(Magicbool3 == 2)
+                    {
+                        MyField_status[1].FieldHP_status += Magicstatus[2].Magic_status;
+                        label13.Text = "" + MyField_status[1].FieldHP_status;
+                        textBox1.Text = "두번째 필드 카드에 체력 " + Magicstatus[2].Magic_status + "를 더한다";
+                        Info_Card[1].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[2].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool3 = 0; Magicbool3 = 0;
-                    textBox2.Text = ""; Info_Card[2].Info_Hand = "";
-                    button3.Image = NullCard; label5.Text = ""; label6.Text = "";
-                    MyField_status[1].FieldATK_status += Magicstatus[2].Magic_status;
-                    label14.Text = "" + MyField_status[1].FieldATK_status;
-                    textBox1.Text = "두번째 필드 카드에 공격력 " + Magicstatus[2].Magic_status + "를 더한다";
-                    Info_Card[1].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[2].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[2].Info_Hand = ""; button3.Image = NullCard; 
+                    label5.Text = ""; label6.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button4.Enabled == false && Magicbool4 == 1)
+                if (button4.Enabled == false && Magicbool4 > 0)
                 {
+                    if (Magicbool4 == 1)
+                    {
+                        MyField_status[1].FieldATK_status += Magicstatus[3].Magic_status;
+                        label14.Text = "" + MyField_status[1].FieldATK_status;
+                        textBox1.Text = "두번째 필드 카드에 공격력 " + Magicstatus[3].Magic_status + "를 더한다";
+                        Info_Card[1].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[3].Magic_status + "증가";
+                    }
+                    if(Magicbool4 == 2)
+                    {
+                        MyField_status[1].FieldHP_status += Magicstatus[3].Magic_status;
+                        label13.Text = "" + MyField_status[1].FieldHP_status;
+                        textBox1.Text = "두번째 필드 카드에 체력 " + Magicstatus[3].Magic_status + "를 더한다";
+                        Info_Card[1].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[3].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool4 = 0; Magicbool4 = 0;
-                    textBox2.Text = ""; Info_Card[3].Info_Hand = "";
-                    button4.Image = NullCard; label7.Text = ""; label8.Text = "";
-                    MyField_status[1].FieldATK_status += Magicstatus[3].Magic_status;
-                    label14.Text = "" + MyField_status[1].FieldATK_status;
-                    textBox1.Text = "두번째 필드 카드에 공격력 " + Magicstatus[3].Magic_status + "를 더한다";
-                    Info_Card[1].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[3].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[3].Info_Hand = ""; button4.Image = NullCard; 
+                    label7.Text = ""; label8.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button5.Enabled == false && Magicbool5 == 1)
+                if(button5.Enabled == false && Magicbool5 > 0)
                 {
+                    if (Magicbool5 == 1)
+                    {
+                        MyField_status[1].FieldATK_status += Magicstatus[4].Magic_status;
+                        label14.Text = "" + MyField_status[1].FieldATK_status;
+                        textBox1.Text = "두번째 필드 카드에 공격력 " + Magicstatus[4].Magic_status + "를 더한다";
+                        Info_Card[1].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[4].Magic_status + "증가";
+                    }
+                    if(Magicbool5 == 2)
+                    {
+                        MyField_status[1].FieldHP_status += Magicstatus[4].Magic_status;
+                        label13.Text = "" + MyField_status[1].FieldHP_status;
+                        textBox1.Text = "두번째 필드 카드에 체력 " + Magicstatus[4].Magic_status + "를 더한다";
+                        Info_Card[1].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[4].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool5 = 0; Magicbool5 = 0;
-                    textBox2.Text = ""; Info_Card[4].Info_Hand = "";
-                    button5.Image = NullCard; label9.Text = ""; label10.Text = "";
-                    MyField_status[1].FieldATK_status += Magicstatus[4].Magic_status;
-                    label14.Text = "" + MyField_status[1].FieldATK_status;
-                    textBox1.Text = "두번째 필드 카드에 공격력 " + Magicstatus[4].Magic_status + "를 더한다";
-                    Info_Card[1].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[4].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[4].Info_Hand = ""; button5.Image = NullCard; 
+                    label9.Text = ""; label10.Text = ""; label33.Text = ""; label34.Text = "";
                 }
                 Card_FieldFull_Fieldnull(); buttonTrue_False();
             }
@@ -809,56 +968,105 @@ namespace C3_Form_testing
                     label9.Text = ""; label10.Text = "";
                     button8.Text = "필드에 카드가 있습니다";
                 }
-
-                if (button1.Enabled == false && Magicbool1 == 1)
+                if(button1.Enabled == false && Magicbool1 > 0)
                 {
+                    if (Magicbool1 == 1)
+                    {
+                        MyField_status[2].FieldATK_status += Magicstatus[0].Magic_status;
+                        label16.Text = "" + MyField_status[2].FieldATK_status;
+                        textBox1.Text = "세번째 필드 카드에 공격력 " + Magicstatus[0].Magic_status + "를 더한다";
+                        Info_Card[2].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[0].Magic_status + "증가";
+                    }
+                    if(Magicbool1 == 2)
+                    {
+                        MyField_status[2].FieldHP_status += Magicstatus[0].Magic_status;
+                        label15.Text = "" + MyField_status[2].FieldHP_status;
+                        textBox1.Text = "세번째 필드 카드에 체력 " + Magicstatus[0].Magic_status + "를 더한다";
+                        Info_Card[2].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[0].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool1 = 0; Magicbool1 = 0;
-                    textBox2.Text = ""; Info_Card[0].Info_Hand = "";
-                    button1.Image = NullCard; label1.Text = ""; label2.Text = "";
-                    MyField_status[2].FieldATK_status += Magicstatus[0].Magic_status;
-                    label16.Text = "" + MyField_status[2].FieldATK_status;
-                    textBox1.Text = "세번째 필드 카드에 공격력 " + Magicstatus[0].Magic_status + "를 더한다";
-                    Info_Card[2].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[0].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[0].Info_Hand = ""; button1.Image = NullCard; 
+                    label1.Text = ""; label2.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button2.Enabled == false && Magicbool2 == 1)
+                if(button2.Enabled == false && Magicbool2 > 0)
                 {
+                    if (Magicbool2 == 1)
+                    {
+                        MyField_status[2].FieldATK_status += Magicstatus[1].Magic_status;
+                        label16.Text = "" + MyField_status[2].FieldATK_status;
+                        textBox1.Text = "세번째 필드 카드에 공격력 " + Magicstatus[1].Magic_status + "를 더한다";
+                        Info_Card[2].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[1].Magic_status + "증가";
+                    }
+                    if (Magicbool2 == 2)
+                    {
+                        MyField_status[2].FieldHP_status += Magicstatus[1].Magic_status;
+                        label15.Text = "" + MyField_status[2].FieldHP_status;
+                        textBox1.Text = "세번째 필드 카드에 체력 " + Magicstatus[1].Magic_status + "를 더한다";
+                        Info_Card[2].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[1].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool2 = 0; Magicbool2 = 0;
-                    textBox2.Text = ""; Info_Card[1].Info_Hand = "";
-                    button2.Image = NullCard; label3.Text = ""; label4.Text = "";
-                    MyField_status[2].FieldATK_status += Magicstatus[1].Magic_status;
-                    label16.Text = "" + MyField_status[2].FieldATK_status;
-                    textBox1.Text = "세번째 필드 카드에 공격력 " + Magicstatus[1].Magic_status + "를 더한다";
-                    Info_Card[2].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[1].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[1].Info_Hand = ""; button2.Image = NullCard; 
+                    label3.Text = ""; label4.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button3.Enabled == false && Magicbool3 == 1)
+                if(button3.Enabled == false && Magicbool3 > 0)
                 {
+                    if (Magicbool3 == 1)
+                    {
+                        MyField_status[2].FieldATK_status += Magicstatus[2].Magic_status;
+                        label16.Text = "" + MyField_status[2].FieldATK_status;
+                        textBox1.Text = "세번째 필드 카드에 공격력 " + Magicstatus[2].Magic_status + "를 더한다";
+                        Info_Card[2].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[2].Magic_status + "증가";
+                    }
+                    if(Magicbool3 == 2)
+                    {
+                        MyField_status[2].FieldHP_status += Magicstatus[2].Magic_status;
+                        label15.Text = "" + MyField_status[2].FieldHP_status;
+                        textBox1.Text = "세번째 필드 카드에 체력 " + Magicstatus[2].Magic_status + "를 더한다";
+                        Info_Card[2].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[2].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool3 = 0; Magicbool3 = 0;
-                    textBox2.Text = ""; Info_Card[2].Info_Hand = "";
-                    button3.Image = NullCard; label5.Text = ""; label6.Text = "";
-                    MyField_status[2].FieldATK_status += Magicstatus[2].Magic_status;
-                    label16.Text = "" + MyField_status[2].FieldATK_status;
-                    textBox1.Text = "세번째 필드 카드에 공격력 " + Magicstatus[2].Magic_status + "를 더한다";
-                    Info_Card[2].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[2].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[2].Info_Hand = ""; button3.Image = NullCard;
+                    label5.Text = ""; label6.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button4.Enabled == false && Magicbool4 == 1)
+                if(button4.Enabled == false && Magicbool4 > 0 )
                 {
+                    if (Magicbool4 == 1)
+                    {
+                        MyField_status[2].FieldATK_status += Magicstatus[3].Magic_status;
+                        label16.Text = "" + MyField_status[2].FieldATK_status;
+                        textBox1.Text = "세번째 필드 카드에 공격력 " + Magicstatus[3].Magic_status + "를 더한다";
+                        Info_Card[2].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[3].Magic_status + "증가";
+                    }
+                    if (Magicbool4 == 2)
+                    {
+                        MyField_status[2].FieldHP_status += Magicstatus[3].Magic_status;
+                        label15.Text = "" + MyField_status[2].FieldHP_status;
+                        textBox1.Text = "세번째 필드 카드에 체력 " + Magicstatus[3].Magic_status + "를 더한다";
+                        Info_Card[2].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[3].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool4 = 0; Magicbool4 = 0;
-                    textBox2.Text = ""; Info_Card[3].Info_Hand = "";
-                    button4.Image = NullCard; label7.Text = ""; label8.Text = "";
-                    MyField_status[2].FieldATK_status += Magicstatus[3].Magic_status;
-                    label16.Text = "" + MyField_status[2].FieldATK_status;
-                    textBox1.Text = "세번째 필드 카드에 공격력 " + Magicstatus[3].Magic_status + "를 더한다";
-                    Info_Card[2].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[3].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[3].Info_Hand = ""; button4.Image = NullCard;
+                    label7.Text = ""; label8.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button5.Enabled == false && Magicbool5 == 1)
+                if(button5.Enabled == false && Magicbool5 > 0)
                 {
+                    if (Magicbool5 == 1)
+                    {
+                        MyField_status[2].FieldATK_status += Magicstatus[4].Magic_status;
+                        label16.Text = "" + MyField_status[2].FieldATK_status;
+                        textBox1.Text = "세번째 필드 카드에 공격력 " + Magicstatus[4].Magic_status + "를 더한다";
+                        Info_Card[2].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[4].Magic_status + "증가";
+                    }
+                    if(Magicbool5 == 2)
+                    {
+                        MyField_status[2].FieldHP_status += Magicstatus[4].Magic_status;
+                        label15.Text = "" + MyField_status[2].FieldHP_status;
+                        textBox1.Text = "세번째 필드 카드에 체력 " + Magicstatus[4].Magic_status + "를 더한다";
+                        Info_Card[2].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[4].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool5 = 0; Magicbool5 = 0;
-                    textBox2.Text = ""; Info_Card[4].Info_Hand = "";
-                    button5.Image = NullCard; label9.Text = ""; label10.Text = "";
-                    MyField_status[2].FieldATK_status += Magicstatus[4].Magic_status;
-                    label16.Text = "" + MyField_status[2].FieldATK_status;
-                    textBox1.Text = "세번째 필드 카드에 공격력 " + Magicstatus[4].Magic_status + "를 더한다";
-                    Info_Card[2].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[4].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[4].Info_Hand = ""; button5.Image = NullCard; 
+                    label9.Text = ""; label10.Text = ""; label33.Text = ""; label34.Text = "";
                 }
                 Card_FieldFull_Fieldnull(); buttonTrue_False();
             }
@@ -928,55 +1136,105 @@ namespace C3_Form_testing
                     button9.Text = "필드에 카드가 있습니다";
                 }
 
-                if (button1.Enabled == false && Magicbool1 == 1)
+                if(button1.Enabled == false && Magicbool1 > 0)
                 {
+                    if (Magicbool1 == 1)
+                    {
+                        MyField_status[3].FieldATK_status += Magicstatus[0].Magic_status;
+                        label18.Text = "" + MyField_status[3].FieldATK_status;
+                        textBox1.Text = "네번째 필드 카드에 공격력 " + Magicstatus[0].Magic_status + "를 더한다";
+                        Info_Card[3].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[0].Magic_status + "증가";
+                    }
+                    if (Magicbool1 == 2)
+                    {
+                        MyField_status[3].FieldHP_status += Magicstatus[0].Magic_status;
+                        label17.Text = "" + MyField_status[3].FieldHP_status;
+                        textBox1.Text = "네번째 필드 카드에 체력 " + Magicstatus[0].Magic_status + "를 더한다";
+                        Info_Card[3].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[0].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool1 = 0; Magicbool1 = 0;
-                    textBox2.Text = ""; Info_Card[0].Info_Hand = "";
-                    button1.Image = NullCard; label1.Text = ""; label2.Text = "";
-                    MyField_status[3].FieldATK_status += Magicstatus[0].Magic_status;
-                    label18.Text = "" + MyField_status[3].FieldATK_status;
-                    textBox1.Text = "네번째 필드 카드에 공격력 " + Magicstatus[0].Magic_status + "를 더한다";
-                    Info_Card[3].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[0].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[0].Info_Hand = ""; button1.Image = NullCard; 
+                    label1.Text = ""; label2.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button2.Enabled == false && Magicbool2 == 1)
+                if(button2.Enabled == false && Magicbool2 > 0)
                 {
+                    if (Magicbool2 == 1)
+                    {
+                        MyField_status[3].FieldATK_status += Magicstatus[1].Magic_status;
+                        label18.Text = "" + MyField_status[3].FieldATK_status;
+                        textBox1.Text = "네번째 필드 카드에 공격력 " + Magicstatus[1].Magic_status + "를 더한다";
+                        Info_Card[3].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[1].Magic_status + "증가";
+                    }
+                    if(Magicbool2 == 2)
+                    {
+                        MyField_status[3].FieldHP_status += Magicstatus[1].Magic_status;
+                        label17.Text = "" + MyField_status[3].FieldHP_status;
+                        textBox1.Text = "네번째 필드 카드에 체력 " + Magicstatus[1].Magic_status + "를 더한다";
+                        Info_Card[3].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[1].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool2 = 0; Magicbool2 = 0;
-                    textBox2.Text = ""; Info_Card[1].Info_Hand = "";
-                    button2.Image = NullCard; label3.Text = ""; label4.Text = "";
-                    MyField_status[3].FieldATK_status += Magicstatus[1].Magic_status;
-                    label18.Text = "" + MyField_status[3].FieldATK_status;
-                    textBox1.Text = "네번째 필드 카드에 공격력 " + Magicstatus[1].Magic_status + "를 더한다";
-                    Info_Card[3].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[1].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[1].Info_Hand = ""; button2.Image = NullCard; 
+                    label3.Text = ""; label4.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button3.Enabled == false && Magicbool3 == 1)
+                if(button3.Enabled == false && Magicbool3 > 0)
                 {
+                    if (Magicbool3 == 1)
+                    {
+                        MyField_status[3].FieldATK_status += Magicstatus[2].Magic_status;
+                        label18.Text = "" + MyField_status[3].FieldATK_status;
+                        textBox1.Text = "네번째 필드 카드에 공격력 " + Magicstatus[2].Magic_status + "를 더한다";
+                        Info_Card[3].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[2].Magic_status + "증가";
+                    }
+                    if(Magicbool3 ==  2)
+                    {
+                        MyField_status[3].FieldHP_status += Magicstatus[2].Magic_status;
+                        label17.Text = "" + MyField_status[3].FieldHP_status;
+                        textBox1.Text = "네번째 필드 카드에 체력 " + Magicstatus[2].Magic_status + "를 더한다";
+                        Info_Card[3].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[2].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool3 = 0; Magicbool3 = 0;
-                    textBox2.Text = ""; Info_Card[2].Info_Hand = "";
-                    button3.Image = NullCard; label5.Text = ""; label6.Text = "";
-                    MyField_status[3].FieldATK_status += Magicstatus[2].Magic_status;
-                    label18.Text = "" + MyField_status[3].FieldATK_status;
-                    textBox1.Text = "네번째 필드 카드에 공격력 " + Magicstatus[2].Magic_status + "를 더한다";
-                    Info_Card[3].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[2].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[2].Info_Hand = ""; button3.Image = NullCard; 
+                    label5.Text = ""; label6.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button4.Enabled == false && Magicbool4 == 1)
+                if(button4.Enabled == false && Magicbool4 > 0)
                 {
+                    if (Magicbool4 == 1)
+                    {
+                        MyField_status[3].FieldATK_status += Magicstatus[3].Magic_status;
+                        label18.Text = "" + MyField_status[3].FieldATK_status;
+                        textBox1.Text = "네번째 필드 카드에 공격력 " + Magicstatus[3].Magic_status + "를 더한다";
+                        Info_Card[3].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[3].Magic_status + "증가";
+                    }
+                    if(Magicbool4 == 2)
+                    {
+                        MyField_status[3].FieldHP_status += Magicstatus[3].Magic_status;
+                        label17.Text = "" + MyField_status[3].FieldHP_status;
+                        textBox1.Text = "네번째 필드 카드에 체력 " + Magicstatus[3].Magic_status + "를 더한다";
+                        Info_Card[3].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[3].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool4 = 0; Magicbool4 = 0;
-                    textBox2.Text = ""; Info_Card[3].Info_Hand = "";
-                    button4.Image = NullCard; label7.Text = ""; label8.Text = "";
-                    MyField_status[3].FieldATK_status += Magicstatus[3].Magic_status;
-                    label18.Text = "" + MyField_status[3].FieldATK_status;
-                    textBox1.Text = "네번째 필드 카드에 공격력 " + Magicstatus[3].Magic_status + "를 더한다";
-                    Info_Card[3].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[3].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[3].Info_Hand = ""; button4.Image = NullCard; 
+                    label7.Text = ""; label8.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button5.Enabled == false && Magicbool5 == 1)
+                if(button5.Enabled == false && Magicbool5 > 0)
                 {
+                    if (Magicbool5 == 1)
+                    {
+                        MyField_status[3].FieldATK_status += Magicstatus[4].Magic_status;
+                        label18.Text = "" + MyField_status[3].FieldATK_status;
+                        textBox1.Text = "네번째 필드 카드에 공격력 " + Magicstatus[4].Magic_status + "를 더한다";
+                        Info_Card[3].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[4].Magic_status + "증가";
+                    }
+                    if(Magicbool5 == 2)
+                    {
+                        MyField_status[3].FieldHP_status += Magicstatus[4].Magic_status;
+                        label17.Text = "" + MyField_status[3].FieldHP_status;
+                        textBox1.Text = "네번째 필드 카드에 체력 " + Magicstatus[4].Magic_status + "를 더한다";
+                        Info_Card[3].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[4].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool5 = 0; Magicbool5 = 0;
-                    textBox2.Text = ""; Info_Card[4].Info_Hand = "";
-                    button5.Image = NullCard; label9.Text = ""; label10.Text = "";
-                    MyField_status[3].FieldATK_status += Magicstatus[4].Magic_status;
-                    label18.Text = "" + MyField_status[3].FieldATK_status;
-                    textBox1.Text = "네번째 필드 카드에 공격력 " + Magicstatus[4].Magic_status + "를 더한다";
-                    Info_Card[3].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[4].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[4].Info_Hand = ""; button5.Image = NullCard; 
+                    label9.Text = ""; label10.Text = ""; label33.Text = ""; label34.Text = "";
                 }
                 Card_FieldFull_Fieldnull(); buttonTrue_False();
             }
@@ -1046,55 +1304,105 @@ namespace C3_Form_testing
                     button10.Text = "필드에 카드가 있습니다";
                 }
 
-                if (button1.Enabled == false && Magicbool1 == 1)
+                if(button1.Enabled == false && Magicbool1 > 0)
                 {
+                    if (Magicbool1 == 1)
+                    {
+                        MyField_status[4].FieldATK_status += Magicstatus[0].Magic_status;
+                        label20.Text = "" + MyField_status[4].FieldATK_status;
+                        textBox1.Text = "다섯번째 필드 카드에 공격력 " + Magicstatus[0].Magic_status + "를 더한다";
+                        Info_Card[4].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[0].Magic_status + "증가";
+                    }
+                    if(Magicbool1 == 2)
+                    {
+                        MyField_status[4].FieldHP_status += Magicstatus[0].Magic_status;
+                        label19.Text = "" + MyField_status[4].FieldHP_status;
+                        textBox1.Text = "다섯번째 필드 카드에 체력 " + Magicstatus[0].Magic_status + "를 더한다";
+                        Info_Card[4].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[0].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool1 = 0; Magicbool1 = 0;
-                    textBox2.Text = ""; Info_Card[0].Info_Hand = "";
-                    button1.Image = NullCard; label1.Text = ""; label2.Text = "";
-                    MyField_status[4].FieldATK_status += Magicstatus[0].Magic_status;
-                    label20.Text = "" + MyField_status[4].FieldATK_status;
-                    textBox1.Text = "다섯번째 필드 카드에 공격력 " + Magicstatus[0].Magic_status + "를 더한다";
-                    Info_Card[4].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[0].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[0].Info_Hand = ""; button1.Image = NullCard; 
+                    label1.Text = ""; label2.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button2.Enabled == false && Magicbool2 == 1)
+                if(button2.Enabled == false && Magicbool2 > 0)
                 {
+                    if (Magicbool2 == 1)
+                    {
+                        MyField_status[4].FieldATK_status += Magicstatus[1].Magic_status;
+                        label20.Text = "" + MyField_status[4].FieldATK_status;
+                        textBox1.Text = "다섯번째 필드 카드에 공격력 " + Magicstatus[1].Magic_status + "를 더한다";
+                        Info_Card[4].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[1].Magic_status + "증가";
+                    }
+                    if(Magicbool2 == 2)
+                    {
+                        MyField_status[4].FieldHP_status += Magicstatus[1].Magic_status;
+                        label19.Text = "" + MyField_status[4].FieldHP_status;
+                        textBox1.Text = "다섯번째 필드 카드에 체력 " + Magicstatus[1].Magic_status + "를 더한다";
+                        Info_Card[4].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[1].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool2 = 0; Magicbool2 = 0;
-                    textBox2.Text = ""; Info_Card[1].Info_Hand = "";
-                    button2.Image = NullCard; label3.Text = ""; label4.Text = "";
-                    MyField_status[4].FieldATK_status += Magicstatus[1].Magic_status;
-                    label20.Text = "" + MyField_status[4].FieldATK_status;
-                    textBox1.Text = "다섯번째 필드 카드에 공격력 " + Magicstatus[1].Magic_status + "를 더한다";
-                    Info_Card[4].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[1].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[1].Info_Hand = ""; button2.Image = NullCard; 
+                    label3.Text = ""; label4.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button3.Enabled == false && Magicbool3 == 1)
+                if(button3.Enabled == false && Magicbool3 > 0)
                 {
+                    if (Magicbool3 == 1)
+                    {
+                        MyField_status[4].FieldATK_status += Magicstatus[2].Magic_status;
+                        label20.Text = "" + MyField_status[4].FieldATK_status;
+                        textBox1.Text = "다섯번째 필드 카드에 공격력 " + Magicstatus[2].Magic_status + "를 더한다";
+                        Info_Card[4].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[2].Magic_status + "증가";
+                    }
+                    if(Magicbool3 == 2)
+                    {
+                        MyField_status[4].FieldHP_status += Magicstatus[2].Magic_status;
+                        label19.Text = "" + MyField_status[4].FieldHP_status;
+                        textBox1.Text = "다섯번째 필드 카드에 체력 " + Magicstatus[2].Magic_status + "를 더한다";
+                        Info_Card[4].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[2].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool3 = 0; Magicbool3 = 0;
-                    textBox2.Text = ""; Info_Card[2].Info_Hand = "";
-                    button3.Image = NullCard; label5.Text = ""; label6.Text = "";
-                    MyField_status[4].FieldATK_status += Magicstatus[2].Magic_status;
-                    label20.Text = "" + MyField_status[4].FieldATK_status;
-                    textBox1.Text = "다섯번째 필드 카드에 공격력 " + Magicstatus[2].Magic_status + "를 더한다";
-                    Info_Card[4].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[2].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[2].Info_Hand = ""; button3.Image = NullCard; 
+                    label5.Text = ""; label6.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button4.Enabled == false && Magicbool4 == 1)
+                if(button4.Enabled == false && Magicbool4 > 0)
                 {
+                    if (Magicbool4 == 1)
+                    {
+                        MyField_status[4].FieldATK_status += Magicstatus[3].Magic_status;
+                        label20.Text = "" + MyField_status[4].FieldATK_status;
+                        textBox1.Text = "다섯번째 필드 카드에 공격력 " + Magicstatus[3].Magic_status + "를 더한다";
+                        Info_Card[4].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[3].Magic_status + "증가";
+                    }
+                    if(Magicbool4 == 2)
+                    {
+                        MyField_status[4].FieldHP_status += Magicstatus[3].Magic_status;
+                        label19.Text = "" + MyField_status[4].FieldHP_status;
+                        textBox1.Text = "다섯번째 필드 카드에 체력 " + Magicstatus[3].Magic_status + "를 더한다";
+                        Info_Card[4].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[3].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool4 = 0; Magicbool4 = 0;
-                    textBox2.Text = ""; Info_Card[3].Info_Hand = "";
-                    button4.Image = NullCard; label7.Text = ""; label8.Text = "";
-                    MyField_status[4].FieldATK_status += Magicstatus[3].Magic_status;
-                    label20.Text = "" + MyField_status[4].FieldATK_status;
-                    textBox1.Text = "다섯번째 필드 카드에 공격력 " + Magicstatus[3].Magic_status + "를 더한다";
-                    Info_Card[4].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[3].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[3].Info_Hand = ""; button4.Image = NullCard; 
+                    label7.Text = ""; label8.Text = ""; label33.Text = ""; label34.Text = "";
                 }
-                if (button5.Enabled == false && Magicbool5 == 1)
+                if(button5.Enabled == false && Magicbool5 > 0)
                 {
+                    if (Magicbool5 == 1)
+                    {
+                        MyField_status[4].FieldATK_status += Magicstatus[4].Magic_status;
+                        label20.Text = "" + MyField_status[4].FieldATK_status;
+                        textBox1.Text = "다섯번째 필드 카드에 공격력 " + Magicstatus[4].Magic_status + "를 더한다";
+                        Info_Card[4].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[4].Magic_status + "증가";
+                    }
+                    if(Magicbool5 == 2)
+                    {
+                        MyField_status[4].FieldHP_status += Magicstatus[4].Magic_status;
+                        label19.Text = "" + MyField_status[4].FieldHP_status;
+                        textBox1.Text = "다섯번째 필드 카드에 체력 " + Magicstatus[4].Magic_status + "를 더한다";
+                        Info_Card[4].Info_Field += "\r\n마법 카드 : 체력 " + Magicstatus[4].Magic_status + "증가";
+                    }
                     pictureBox11.Image = NullCard; Handbool5 = 0; Magicbool5 = 0;
-                    textBox2.Text = ""; Info_Card[4].Info_Hand = "";
-                    button5.Image = NullCard; label9.Text = ""; label10.Text = "";
-                    MyField_status[4].FieldATK_status += Magicstatus[4].Magic_status;
-                    label20.Text = "" + MyField_status[4].FieldATK_status;
-                    textBox1.Text = "다섯번째 필드 카드에 공격력 " + Magicstatus[4].Magic_status + "를 더한다";
-                    Info_Card[4].Info_Field += "\r\n마법 카드 : 공격력 " + Magicstatus[4].Magic_status + "증가";
+                    textBox2.Text = ""; Info_Card[4].Info_Hand = ""; button5.Image = NullCard;
+                    label9.Text = ""; label10.Text = ""; label33.Text = ""; label34.Text = "";
                 }
                 Card_FieldFull_Fieldnull(); buttonTrue_False();
             }
@@ -1122,7 +1430,7 @@ namespace C3_Form_testing
            else if (button5.Enabled == false) { button5.Enabled = true; }
            else if (Handbool1 == 0) { button1.Enabled = true; }
 
-                if (e.Button == MouseButtons.Left && Magicbool1 == 1)
+                if (e.Button == MouseButtons.Left && Magicbool1 > 0)
                 { MagicSpell_AddCard(); }
                 else if(e.Button == MouseButtons.Left && Magicbool1 == 0)
                 { Card_FieldFull_Fieldnull(); }
@@ -1151,7 +1459,7 @@ namespace C3_Form_testing
            else if (button5.Enabled == false) { button5.Enabled = true; }
            else if (Handbool2 == 0) { button2.Enabled = true; }
 
-                if (e.Button == MouseButtons.Left && Magicbool2 == 1)
+                if (e.Button == MouseButtons.Left && Magicbool2 > 0)
                 { MagicSpell_AddCard(); }
                 else if (e.Button == MouseButtons.Left && Magicbool2 == 0)
                 { Card_FieldFull_Fieldnull(); }
@@ -1180,7 +1488,7 @@ namespace C3_Form_testing
            else if (button5.Enabled == false) { button5.Enabled = true; }
            else if (Handbool3 == 0) { button3.Enabled = true; }
             }
-            if (e.Button == MouseButtons.Left && Magicbool3 == 1)
+            if (e.Button == MouseButtons.Left && Magicbool3 > 0)
             { MagicSpell_AddCard(); }
             else if (e.Button == MouseButtons.Left && Magicbool3 == 0)
             { Card_FieldFull_Fieldnull(); }
@@ -1208,7 +1516,7 @@ namespace C3_Form_testing
            else if (button5.Enabled == false) { button5.Enabled = true; }
            else if (Handbool4 == 0) { button4.Enabled = true; }
             }
-            if (e.Button == MouseButtons.Left && Magicbool4 == 1)
+            if (e.Button == MouseButtons.Left && Magicbool4 > 0)
             { MagicSpell_AddCard(); }
             else if (e.Button == MouseButtons.Left && Magicbool4 == 0)
             { Card_FieldFull_Fieldnull(); }
@@ -1236,7 +1544,7 @@ namespace C3_Form_testing
            else if (button4.Enabled == false) { button4.Enabled = true; }
            else if (Handbool5 == 0) { button5.Enabled = true; }
             }
-            if (e.Button == MouseButtons.Left && Magicbool5 == 1)
+            if (e.Button == MouseButtons.Left && Magicbool5 > 0)
             { MagicSpell_AddCard(); }
             else if (e.Button == MouseButtons.Left && Magicbool5 == 0)
             { Card_FieldFull_Fieldnull(); }
@@ -1297,6 +1605,7 @@ namespace C3_Form_testing
         public Form1()
         {
             InitializeComponent();
+            //나의 손패 체력, 공격력
             label1.Parent = button1; label1.Location = new Point(38, 179);
             label2.Parent = button1; label2.Location = new Point(112, 179);
             label3.Parent = button2; label3.Location = new Point(38, 179);
@@ -1307,7 +1616,7 @@ namespace C3_Form_testing
             label8.Parent = button4; label8.Location = new Point(112, 179);
             label9.Parent = button5; label9.Location = new Point(38, 179);
             label10.Parent = button5; label10.Location = new Point(112, 179);
-
+            // 나의 필드 체력, 공격력
             label11.Parent = pictureBox1; label11.Location = new Point(38, 179);
             label12.Parent = pictureBox1; label12.Location = new Point(112, 179);
             label13.Parent = pictureBox2; label13.Location = new Point(38, 179);
@@ -1318,7 +1627,7 @@ namespace C3_Form_testing
             label18.Parent = pictureBox4; label18.Location = new Point(112, 179);
             label19.Parent = pictureBox5; label19.Location = new Point(38, 179);
             label20.Parent = pictureBox5; label20.Location = new Point(112, 179);
-
+            //AI 필드 체력, 공격력
             label21.Parent = pictureBox6; label21.Location = new Point(38, 179);
             label22.Parent = pictureBox6; label22.Location = new Point(112, 179);
             label23.Parent = pictureBox7; label23.Location = new Point(38, 179);
@@ -1329,7 +1638,7 @@ namespace C3_Form_testing
             label28.Parent = pictureBox9; label28.Location = new Point(112, 179);
             label29.Parent = pictureBox10; label29.Location = new Point(38, 179);
             label30.Parent = pictureBox10; label30.Location = new Point(112, 179);
-
+            //카드 정보 불러오기 칸 체력, 공격력
             label33.Parent = pictureBox11; label33.Location = new Point(38, 179);
             label34.Parent = pictureBox11; label34.Location = new Point(112, 179);
         }

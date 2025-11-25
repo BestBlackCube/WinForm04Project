@@ -19,16 +19,16 @@
       "RelativeMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|solutionrelative:c3 form testing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\c3 form testing\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|solutionrelative:c3 form testing\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\c3 form testing\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|solutionrelative:c3 form testing\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\c3 form testing\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|solutionrelative:c3 form testing\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:C3 Form testing\\Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\c3 form testing\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:c3 form testing\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +50,8 @@
               "RelativeToolTip": "C3 Form testing\\Form1.Designer.cs",
               "ViewState": "AgIAAD4DAAAAAAAAAAAAwEwDAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T03:14:08.514Z"
+              "WhenOpened": "2025-11-24T03:14:08.514Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -62,11 +63,12 @@
               "RelativeToolTip": "C3 Form testing\\Form2.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAqwDcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T02:12:43.806Z"
+              "WhenOpened": "2025-11-24T02:12:43.806Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Form2.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form2.cs",
               "RelativeDocumentMoniker": "C3 Form testing\\Form2.cs",
@@ -95,7 +97,7 @@
               "RelativeDocumentMoniker": "C3 Form testing\\Form1.cs",
               "ToolTip": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form1.cs",
               "RelativeToolTip": "C3 Form testing\\Form1.cs",
-              "ViewState": "AgIAAB4BAAAAAAAAAAAAABUBAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAP8FAAAAAAAAAAAuwDoGAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T03:08:54.773Z",
               "EditorCaption": ""
@@ -109,11 +111,12 @@
               "ToolTip": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form1.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "C3 Form testing\\Form1.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T02:12:44.047Z"
+              "WhenOpened": "2025-11-24T02:12:44.047Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "C3 Form testing\\Properties\\Resources.resx",
@@ -121,7 +124,8 @@
               "RelativeToolTip": "C3 Form testing\\Properties\\Resources.resx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-11-24T02:12:44.05Z"
+              "WhenOpened": "2025-11-24T02:12:44.05Z",
+              "EditorCaption": ""
             }
           ]
         }
