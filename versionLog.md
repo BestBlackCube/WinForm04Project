@@ -1,17 +1,14 @@
-# WinForm04 Project 카드 게임 개발 2.3.3v
+# WinForm04 Project 카드 게임 개발 3.3.4v
 ## 기능 설명
-마법 카드의 종류는 공격력 증가 단일 카드 였지만 다양성을 위해 공격력 증가와 체력 증가로 나눔
-
+난이도를 만들어, 클리어의 조건을 충족 하는 과정을 세분화 하여 플레이어의 취양을 갖춤 
 
 
 - ## Form01
-    - ### [마법카드 종류](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L59-L87)
-        - 캐릭터 카드와 동일하게 카드 구조체에 이미지와 능력치를 대입한다.
-    - ### [마법카드 추가](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L182-L200)
-        - 마법카드는 공격력과 체력 2가지로 나뉘며, 0~9까지의 난수로 0~4: 공격력 5~9: 체력 50:50 비율로 선정 된다.  
-    - ### [마법카드 사용](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L631-L650)
-        - Magicbool 정수값 구별기로 공격력 카드인지 체력카드인지 중간 과정을 거쳐 각각의 소스 코드로 이동 된다. 
-
+    - ### [난이도 설정](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L102-L120)
+        - Form2에서 받아온 정수값을 토대로 게임의 난이도가 바뀌는 구조이다.
+- ## Form2
+    - ### [난이도 버튼](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form2.cs)
+        - Form2에서 나오는 화면 버튼 3개에서 각각의 버튼을 누르면 Form1에 넘길 정수값이 설정 된다.
 
 - ## 버그
 
