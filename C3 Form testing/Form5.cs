@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
@@ -35,7 +36,6 @@ namespace C3_Form_testing
         1440, 900 - 줄인 사이즈
          */
 
-        //선재 : 창모드 체크박스만 건들경우 버튼위치 이탈
         public void setSize(Boolean sizeInfo)
         {
             if(sizeInfo)

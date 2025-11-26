@@ -62,30 +62,38 @@ namespace C3_Form_testing
         {
             if (checkBox1.Checked)
             {
-                if (!bigWindow)
-                {
-                    _Form5.setSize(false);
-                }
-                if (radioButton2.Checked)
+                // if (!bigWindow) _Form5.setSize(false);
+                /*if (radioButton2.Checked)
                 {
                     bigWindow = false;
                     _Form1.setSize(bigWindow);
                     _Form5.setSize(bigWindow);
-                }
+                }*/
+                
                 _Form1.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
                 _Form1.WindowState = FormWindowState.Normal;
                 _Form5.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
                 _Form5.WindowState = FormWindowState.Normal;
+                _Form1.setSize(bigWindow);//위치변경
+                _Form5.setSize(bigWindow);//위치변경
+                //setBound(Program.chkWindowSize);
+                Program.chk = false;
+
             }
             
             else
             {
-                _Form1.setSize(true);
-                _Form5.setSize(true);
+                //_Form1.setSize(true);
+                // _Form5.setSize(true);
+
+                //bigWindow = true;
                 _Form1.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 _Form1.WindowState = FormWindowState.Maximized;
                 _Form5.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 _Form5.WindowState = FormWindowState.Maximized;
+                _Form1.setSize(true);//위치변경
+                _Form5.setSize(true);//위치변경
+                //setBound(Program.chkWindowSize);
                 Program.chk = true;
             }
                 
@@ -94,9 +102,18 @@ namespace C3_Form_testing
         private void Battle_Delay_Delete(object sender, MouseEventArgs e)
         {// 11 - 23 전투 딜레이 제거 및 생성을 만듦
             if(_Form1.Delay_Delete == 0 && e.Button == MouseButtons.Left)
-            { _Form1.Delay_Delete = 1; MessageBox.Show("전투 딜레이를 제거했습니다! "); }
+            { 
+                _Form1.Delay_Delete = 1; 
+                MessageBox.Show("전투 딜레이를 제거했습니다! ");
+                button5.Text = "전투 딜레이 생성";
+            }
+            
        else if(_Form1.Delay_Delete == 1 && e.Button == MouseButtons.Left)
-            { _Form1.Delay_Delete = 0; MessageBox.Show("전투 딜레이를 생성했습니다! "); }
+            { 
+                _Form1.Delay_Delete = 0; 
+                MessageBox.Show("전투 딜레이를 생성했습니다! ");
+                button5.Text = "전투 딜레이 제거";
+            }
         }
 
         public Boolean bigWindow;
@@ -104,34 +121,75 @@ namespace C3_Form_testing
         {
             if (checkBox1.Checked && radioButton1.Checked)
             {
+
+                Program.chkWindowSize = true;
+                //setBound(Program.chkWindowSize);
                 bigWindow = true;
                 _Form1.setSize(bigWindow);
                 _Form5.setSize(bigWindow);
-                _Form1.Left = (Screen.PrimaryScreen.Bounds.Width - _Form1.Width);
-                _Form1.Top = (Screen.PrimaryScreen.Bounds.Height - _Form1.Height);
-                _Form5.Left = (Screen.PrimaryScreen.Bounds.Width - _Form5.Width);
-                _Form5.Top = (Screen.PrimaryScreen.Bounds.Height - _Form5.Height);
+                //_Form1.Left = (Screen.PrimaryScreen.Bounds.Width - _Form1.Width);
+                //_Form1.Top = (Screen.PrimaryScreen.Bounds.Height - _Form1.Height);
+                // _Form5.Left = (Screen.PrimaryScreen.Bounds.Width - _Form5.Width);
+                //_Form5.Top = (Screen.PrimaryScreen.Bounds.Height - _Form5.Height);
+
+               // setBound(Program.chkWindowSize);
             }
+            else if (radioButton1.Checked) bigWindow = true; Program.chkWindowSize = true;
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked && radioButton2.Checked)
             {// 1920 * 1080 기준으로 맞추어 세부적인 값을 조정해야함
-                _Form1.Left = (Screen.PrimaryScreen.Bounds.Width - _Form1.Width + 250);
-                _Form1.Top = (Screen.PrimaryScreen.Bounds.Height - _Form1.Height + 100);
-                _Form5.Left = (Screen.PrimaryScreen.Bounds.Width - _Form5.Width + 250);
-                _Form5.Top = (Screen.PrimaryScreen.Bounds.Height - _Form5.Height + 100);
+             // _Form1.Left = (Screen.PrimaryScreen.Bounds.Width - _Form1.Width + 250);
+             //_Form1.Top = (Screen.PrimaryScreen.Bounds.Height - _Form1.Height + 100);
+             //_Form5.Left = (Screen.PrimaryScreen.Bounds.Width - _Form5.Width + 250);
+             //_Form5.Top = (Screen.PrimaryScreen.Bounds.Height - _Form5.Height + 100);
+
+                Program.chkWindowSize = false;
+                //setBound(Program.chkWindowSize);
                 bigWindow = false;
                 _Form1.setSize(bigWindow);
                 _Form5.setSize(bigWindow);
+
+                //setBound(Program.chkWindowSize);
+                // Program.chkWindowSize = false;
             }
 
+            else if (radioButton2.Checked) bigWindow = false;Program.chkWindowSize = false;
+
         }
+
+       /* private void setBound(Boolean windowSize)
+        {
+            if (windowSize) 
+            {
+                _Form1.Left = (Screen.PrimaryScreen.Bounds.Width - _Form1.Width);
+                _Form1.Top = (Screen.PrimaryScreen.Bounds.Height - _Form1.Height);
+                 _Form5.Left = (Screen.PrimaryScreen.Bounds.Width - _Form5.Width);
+                _Form5.Top = (Screen.PrimaryScreen.Bounds.Height - _Form5.Height);
+            }
+            else
+            {
+                _Form1.Left = (Screen.PrimaryScreen.Bounds.Width - _Form1.Width);// + 250);
+                _Form1.Top = (Screen.PrimaryScreen.Bounds.Height - _Form1.Height);// + 100);
+                _Form5.Left = (Screen.PrimaryScreen.Bounds.Width - _Form5.Width);// + 250);
+                _Form5.Top = (Screen.PrimaryScreen.Bounds.Height - _Form5.Height);// + 100);
+            }
+        }*/
+
+      
 
         private void Form4_Load(object sender, EventArgs e)
         {
             if (Program.chk) checkBox1.Checked = false;
+            if (Program.chkWindowSize) radioButton1.Checked = true;
+            else radioButton2.Checked = true;
+            if(_Form1.Delay_Delete == 0)
+                button5.Text = "전투 딜레이 제거";
+            if (_Form1.Delay_Delete == 1)
+                button5.Text = "전투 딜레이 생성";
+
         }
 
         private void button6_Click(object sender, EventArgs e)

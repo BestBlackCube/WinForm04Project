@@ -553,19 +553,9 @@ namespace C3_Form_testing.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap TTI7_1 {
+        internal static System.Drawing.Bitmap TTI7 {
             get {
-                object obj = ResourceManager.GetObject("TTI7_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap TTI7_2 {
-            get {
-                object obj = ResourceManager.GetObject("TTI7_2", resourceCulture);
+                object obj = ResourceManager.GetObject("TTI7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -576,16 +566,6 @@ namespace C3_Form_testing.Properties {
         internal static System.Drawing.Bitmap TTI8 {
             get {
                 object obj = ResourceManager.GetObject("TTI8", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap TTI9 {
-            get {
-                object obj = ResourceManager.GetObject("TTI9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

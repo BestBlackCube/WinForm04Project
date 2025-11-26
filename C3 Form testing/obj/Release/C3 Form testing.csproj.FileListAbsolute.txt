@@ -32,3 +32,31 @@ C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 20\C3 Form 
 C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 20\C3 Form testing\obj\Release\C3 Form testing.csproj.CoreCompileInputs.cache
 C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 20\C3 Form testing\obj\Release\C3 Form testing.exe
 C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\11 - 20\C3 Form testing\obj\Release\C3 Form testing.pdb
+E:\C3\대학교 윈도우 조별과제\윈도우 프로그래밍\C3 Form testing\bin\Release\C3 Form testing.exe.config
+E:\C3\대학교 윈도우 조별과제\윈도우 프로그래밍\C3 Form testing\bin\Release\C3 Form testing.exe
+E:\C3\대학교 윈도우 조별과제\윈도우 프로그래밍\C3 Form testing\bin\Release\C3 Form testing.pdb
+E:\C3\대학교 윈도우 조별과제\윈도우 프로그래밍\C3 Form testing\obj\Release\C3 Form testing.csproj.AssemblyReference.cache
+E:\C3\대학교 윈도우 조별과제\윈도우 프로그래밍\C3 Form testing\obj\Release\C3_Form_testing.Form1.resources
+E:\C3\대학교 윈도우 조별과제\윈도우 프로그래밍\C3 Form testing\obj\Release\C3_Form_testing.Form2.resources
+E:\C3\대학교 윈도우 조별과제\윈도우 프로그래밍\C3 Form testing\obj\Release\C3_Form_testing.Form3.resources
+E:\C3\대학교 윈도우 조별과제\윈도우 프로그래밍\C3 Form testing\obj\Release\C3_Form_testing.Form4.resources
+E:\C3\대학교 윈도우 조별과제\윈도우 프로그래밍\C3 Form testing\obj\Release\C3_Form_testing.Form5.resources
+E:\C3\대학교 윈도우 조별과제\윈도우 프로그래밍\C3 Form testing\obj\Release\C3_Form_testing.Properties.Resources.resources
+E:\C3\대학교 윈도우 조별과제\윈도우 프로그래밍\C3 Form testing\obj\Release\C3 Form testing.csproj.GenerateResource.cache
+E:\C3\대학교 윈도우 조별과제\윈도우 프로그래밍\C3 Form testing\obj\Release\C3 Form testing.csproj.CoreCompileInputs.cache
+E:\C3\대학교 윈도우 조별과제\윈도우 프로그래밍\C3 Form testing\obj\Release\C3 Form testing.exe
+E:\C3\대학교 윈도우 조별과제\윈도우 프로그래밍\C3 Form testing\obj\Release\C3 Form testing.pdb
+C:\Users\1cjsw\OneDrive\바탕 화면\새 폴더\C3 Form testing\bin\Release\C3 Form testing.exe.config
+C:\Users\1cjsw\OneDrive\바탕 화면\새 폴더\C3 Form testing\bin\Release\C3 Form testing.exe
+C:\Users\1cjsw\OneDrive\바탕 화면\새 폴더\C3 Form testing\bin\Release\C3 Form testing.pdb
+C:\Users\1cjsw\OneDrive\바탕 화면\새 폴더\C3 Form testing\obj\Release\C3 Form testing.csproj.AssemblyReference.cache
+C:\Users\1cjsw\OneDrive\바탕 화면\새 폴더\C3 Form testing\obj\Release\C3_Form_testing.Form1.resources
+C:\Users\1cjsw\OneDrive\바탕 화면\새 폴더\C3 Form testing\obj\Release\C3_Form_testing.Form2.resources
+C:\Users\1cjsw\OneDrive\바탕 화면\새 폴더\C3 Form testing\obj\Release\C3_Form_testing.Form3.resources
+C:\Users\1cjsw\OneDrive\바탕 화면\새 폴더\C3 Form testing\obj\Release\C3_Form_testing.Form4.resources
+C:\Users\1cjsw\OneDrive\바탕 화면\새 폴더\C3 Form testing\obj\Release\C3_Form_testing.Form5.resources
+C:\Users\1cjsw\OneDrive\바탕 화면\새 폴더\C3 Form testing\obj\Release\C3_Form_testing.Properties.Resources.resources
+C:\Users\1cjsw\OneDrive\바탕 화면\새 폴더\C3 Form testing\obj\Release\C3 Form testing.csproj.GenerateResource.cache
+C:\Users\1cjsw\OneDrive\바탕 화면\새 폴더\C3 Form testing\obj\Release\C3 Form testing.csproj.CoreCompileInputs.cache
+C:\Users\1cjsw\OneDrive\바탕 화면\새 폴더\C3 Form testing\obj\Release\C3 Form testing.exe
+C:\Users\1cjsw\OneDrive\바탕 화면\새 폴더\C3 Form testing\obj\Release\C3 Form testing.pdb

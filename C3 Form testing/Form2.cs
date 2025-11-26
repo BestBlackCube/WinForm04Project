@@ -63,6 +63,7 @@ namespace C3_Form_testing
         {
             if (chkFirst)
             {
+                if(!Program.chkWindowSize)F1.Size = new Size(1440, 900); // 231202 불특정 예외처리
                 F1.Show();
                 _Form5.Visible = false;
             }

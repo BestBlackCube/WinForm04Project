@@ -145,9 +145,6 @@
   <data name="AIHP10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AIHP10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TTI7_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TTI7_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Hard_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hard_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,9 +178,6 @@
   <data name="MYHP10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MYHP10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TTI9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TTI9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MagicCard_HP2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MagicCard_HP2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -213,9 +207,6 @@
   </data>
   <data name="MonsterCard7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MonsterCard7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TTI7_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TTI7_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TTI10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TTI10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -276,5 +267,8 @@
   </data>
   <data name="main_Start_1440" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\main_Start_1440.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TTI7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TTI7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

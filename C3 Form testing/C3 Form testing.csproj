@@ -234,18 +234,6 @@
     <None Include="Resources\button6.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\TTI2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\TTI3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\TTI4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\TTI1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\TTI5.png" />
   </ItemGroup>
   <ItemGroup>
@@ -255,16 +243,7 @@
     <None Include="Resources\TTI8.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\TTI9.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\TTI10.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\TTI7_1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\TTI7_2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\button8.png" />
@@ -274,6 +253,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\main_Start_1440.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TTI1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TTI2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TTI3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TTI4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TTI7.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

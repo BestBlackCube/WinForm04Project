@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.GameStart_btn = new System.Windows.Forms.Button();
             this.GameStart_tutorial = new System.Windows.Forms.Button();
             this.GameStart_Setting_btn = new System.Windows.Forms.Button();
@@ -37,7 +38,6 @@
             // GameStart_btn
             // 
             this.GameStart_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.GameStart_btn.AutoSize = true;
             this.GameStart_btn.BackgroundImage = global::C3_Form_testing.Properties.Resources.button8;
             this.GameStart_btn.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold);
             this.GameStart_btn.Location = new System.Drawing.Point(797, 628);
@@ -51,7 +51,6 @@
             // GameStart_tutorial
             // 
             this.GameStart_tutorial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.GameStart_tutorial.AutoSize = true;
             this.GameStart_tutorial.BackgroundImage = global::C3_Form_testing.Properties.Resources.button8;
             this.GameStart_tutorial.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold);
             this.GameStart_tutorial.Location = new System.Drawing.Point(797, 704);
@@ -65,7 +64,6 @@
             // GameStart_Setting_btn
             // 
             this.GameStart_Setting_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.GameStart_Setting_btn.AutoSize = true;
             this.GameStart_Setting_btn.BackgroundImage = global::C3_Form_testing.Properties.Resources.button8;
             this.GameStart_Setting_btn.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold);
             this.GameStart_Setting_btn.Location = new System.Drawing.Point(797, 784);
@@ -79,7 +77,6 @@
             // GameEnd_btn
             // 
             this.GameEnd_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.GameEnd_btn.AutoSize = true;
             this.GameEnd_btn.BackgroundImage = global::C3_Form_testing.Properties.Resources.button8;
             this.GameEnd_btn.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold);
             this.GameEnd_btn.Location = new System.Drawing.Point(797, 865);
@@ -102,12 +99,13 @@
             this.Controls.Add(this.GameStart_Setting_btn);
             this.Controls.Add(this.GameStart_tutorial);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form5";
+            this.Text = "Team 4";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

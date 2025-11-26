@@ -14,6 +14,7 @@ using System.Threading; // 지연시간 추가
 using System.Timers;
 using System.Reflection.Emit;
 using System.Security.Permissions;
+using System.Xml.XPath;
 
 namespace C3_Form_testing
 {
@@ -21,6 +22,7 @@ namespace C3_Form_testing
     {
         public int Delay_Delete = 0;
         Form5 _Form5;
+
         private static DateTime Delay(int ms)
         {
             DateTime ThisMoment = DateTime.Now;
@@ -35,6 +37,7 @@ namespace C3_Form_testing
         private void Delay07s() { if (Delay_Delete == 0) { Delay(700); } }
         private void Delay10s() { if (Delay_Delete == 0) { Delay(1000); } }
         private void Delay15s() { if (Delay_Delete == 0) { Delay(1500); } }
+
         Random HP_point = new Random(); Random ATK_point = new Random();
         Random Card_Number = new Random(); Random Magic_point = new Random();
         public int MyHp = 50, AiHp = 50, DeleteCardcount = 3, GameLV, BattleRectangle = 0,
@@ -68,8 +71,9 @@ namespace C3_Form_testing
         {// 11 - 17 폼연결 프로토타입 ShowDialog가 아닌 Show로 하면 Form1과 2가 실행됨
             //Form2 F2 = new Form2(this, true); F2.Owner = this; F2.Show();
             label31.Text = "MyHp : 50"; label32.Text = "AiHp : 50"; textBox1.MaxLength = 100;
-        }
 
+        }
+        Boolean gameEnd = false;
         public void setSize(Boolean sizeInfo)
         {
             if (sizeInfo)
@@ -280,17 +284,23 @@ namespace C3_Form_testing
 
         }
 
+
+
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult result = MessageBox.Show("정말 종료하시겠습니까?", "게임 종료", MessageBoxButtons.YesNo);
-            if (result != DialogResult.Yes)
+            if (!gameEnd)
             {
-                e.Cancel = true; // 종료를 취소하도록 설정
+                DialogResult result = MessageBox.Show("정말 종료하시겠습니까?", "게임 종료", MessageBoxButtons.YesNo);
+                if (result != DialogResult.Yes)
+                {
+                    e.Cancel = true; // 종료를 취소하도록 설정
+                }
+                else
+                {
+                    _Form5.Close();
+                }
             }
-            else
-            {
-                _Form5.Close();
-            }
+            else _Form5.Close();
         }
 
         public void buttonTrue_False()
@@ -928,15 +938,16 @@ namespace C3_Form_testing
                 }
                 this.Invalidate(); Delay10s();
                 textBox1.Text += "\r\n전투 종료!"; BattleRectangle = 0; BattlePhase = 0;
+                Card_FieldFull_Fieldnull(); buttonTrue_False();
                 button6.Visible = true; button7.Visible = true; button8.Visible = true;
                 button9.Visible = true; button10.Visible = true; button20.Enabled = true;
                 button11.Visible = true; button12.Visible = true; button20.Visible = true;
                 button1.Visible = true; button2.Visible = true; button3.Visible = true;
                 button4.Visible = true; button5.Visible = true;
                 if (MyHp <= 0)
-                { MessageBox.Show("플레이어가 졌습니다!"); this.Close(); }
+                { MessageBox.Show("플레이어가 졌습니다!"); gameEnd = true; this.Close(); }
                 else if(AiHp <= 0)
-                { MessageBox.Show("인공지능이 졌습니다!"); this.Close(); }
+                { MessageBox.Show("인공지능이 졌습니다!"); gameEnd = true; this.Close(); }
             }
         }
         private void CardAdd1_button(object sender, MouseEventArgs e)
@@ -952,7 +963,8 @@ namespace C3_Form_testing
                     Info_Card[0].Info_Field = Info_Card[0].Info_Hand;
                     button1.Image = NullCard; 
                     label1.Text = ""; label2.Text = "";
-                    button6.Text = "필드에 카드가 있습니다"; 
+                    button6.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[0].MyHP_status = 0; Mycardstatus[0].MyATK_status = 0;
                 }
                 if (button2.Enabled == false && Magicbool2 == 0)
                 {
@@ -963,7 +975,8 @@ namespace C3_Form_testing
                     Info_Card[0].Info_Field = Info_Card[1].Info_Hand;
                     button2.Image = NullCard; 
                     label3.Text = ""; label4.Text = "";
-                    button6.Text = "필드에 카드가 있습니다"; 
+                    button6.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[1].MyHP_status = 0; Mycardstatus[1].MyATK_status = 0;
                 }
                 if (button3.Enabled == false && Magicbool3 == 0)
                 {
@@ -975,6 +988,7 @@ namespace C3_Form_testing
                     button3.Image = NullCard;
                     label5.Text = ""; label6.Text = "";
                     button6.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[2].MyHP_status = 0; Mycardstatus[2].MyATK_status = 0;
                 }
                 if (button4.Enabled == false && Magicbool4 == 0)
                 {
@@ -986,6 +1000,7 @@ namespace C3_Form_testing
                     button4.Image = NullCard;
                     label7.Text = ""; label8.Text = "";
                     button6.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[3].MyHP_status = 0; Mycardstatus[3].MyATK_status = 0;
                 }
                 if (button5.Enabled == false && Magicbool5 == 0)
                 {
@@ -997,6 +1012,7 @@ namespace C3_Form_testing
                     button5.Image = NullCard;
                     label9.Text = ""; label10.Text = "";
                     button6.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[4].MyHP_status = 0; Mycardstatus[4].MyATK_status = 0;
                 }
 
                 if(button1.Enabled == false && Magicbool1 > 0)
@@ -1018,6 +1034,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool1 = 0; Magicbool1 = 0;
                     textBox2.Text = ""; Info_Card[0].Info_Hand = ""; button1.Image = NullCard; 
                     label1.Text = ""; label2.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[0].Magic_status = 0;
                 }
                 if(button2.Enabled == false && Magicbool2 > 0)
                 {
@@ -1038,6 +1055,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool2 = 0; Magicbool2 = 0;
                     textBox2.Text = ""; Info_Card[1].Info_Hand = ""; button2.Image = NullCard; 
                     label3.Text = ""; label4.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[1].Magic_status = 0;
                 }
                 if(button3.Enabled == false && Magicbool3 > 0)
                 {
@@ -1058,6 +1076,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool3 = 0; Magicbool3 = 0;
                     textBox2.Text = ""; Info_Card[2].Info_Hand = ""; button3.Image = NullCard;
                     label5.Text = ""; label6.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[2].Magic_status = 0;
                 }
                 if(button4.Enabled == false && Magicbool4 > 0)
                 {
@@ -1078,6 +1097,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool4 = 0; Magicbool4 = 0;
                     textBox2.Text = ""; Info_Card[3].Info_Hand = ""; button4.Image = NullCard; 
                     label7.Text = ""; label8.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[3].Magic_status = 0;
                 }
                 if(button5.Enabled == false && Magicbool5 > 0)
                 {
@@ -1098,6 +1118,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool5 = 0; Magicbool5 = 0;
                     textBox2.Text = ""; Info_Card[4].Info_Hand = ""; button5.Image = NullCard; 
                     label9.Text = ""; label10.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[4].Magic_status = 0;
                 }
                 Card_FieldFull_Fieldnull(); buttonTrue_False();
             }
@@ -1128,6 +1149,7 @@ namespace C3_Form_testing
                     button1.Image = NullCard;
                     label1.Text = ""; label2.Text = "";
                     button7.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[0].MyHP_status = 0; Mycardstatus[0].MyATK_status = 0;
                 }
                 if (button2.Enabled == false && Magicbool2 == 0)
                 {
@@ -1139,6 +1161,7 @@ namespace C3_Form_testing
                     button2.Image = NullCard;
                     label3.Text = ""; label4.Text = "";
                     button7.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[1].MyHP_status = 0; Mycardstatus[1].MyATK_status = 0;
                 }
                 if (button3.Enabled == false && Magicbool3 == 0)
                 {
@@ -1150,6 +1173,7 @@ namespace C3_Form_testing
                     button3.Image = NullCard;
                     label5.Text = ""; label6.Text = "";
                     button7.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[2].MyHP_status = 0; Mycardstatus[2].MyATK_status = 0;
                 }
                 if (button4.Enabled == false && Magicbool4 == 0)
                 {
@@ -1161,6 +1185,7 @@ namespace C3_Form_testing
                     button4.Image = NullCard;
                     label7.Text = ""; label8.Text = "";
                     button7.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[3].MyHP_status = 0; Mycardstatus[3].MyATK_status = 0;
                 }
                 if (button5.Enabled == false && Magicbool5 == 0)
                 {
@@ -1172,6 +1197,7 @@ namespace C3_Form_testing
                     button5.Image = NullCard;
                     label9.Text = ""; label10.Text = "";
                     button7.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[4].MyHP_status = 0; Mycardstatus[4].MyATK_status = 0;
                 }
 
                 if(button1.Enabled == false && Magicbool1 > 0)
@@ -1193,6 +1219,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool1 = 0; Magicbool1 = 0;
                     textBox2.Text = ""; Info_Card[0].Info_Hand = ""; button1.Image = NullCard; 
                     label1.Text = ""; label2.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[0].Magic_status = 0;
                 }
                 if(button2.Enabled == false && Magicbool2 > 0)
                 {
@@ -1213,6 +1240,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool2 = 0; Magicbool2 = 0;
                     textBox2.Text = ""; Info_Card[1].Info_Hand = ""; button2.Image = NullCard; 
                     label3.Text = ""; label4.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[1].Magic_status = 0;
                 }
                 if(button3.Enabled == false && Magicbool3 > 0)
                 {
@@ -1233,6 +1261,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool3 = 0; Magicbool3 = 0;
                     textBox2.Text = ""; Info_Card[2].Info_Hand = ""; button3.Image = NullCard; 
                     label5.Text = ""; label6.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[2].Magic_status = 0;
                 }
                 if (button4.Enabled == false && Magicbool4 > 0)
                 {
@@ -1253,6 +1282,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool4 = 0; Magicbool4 = 0;
                     textBox2.Text = ""; Info_Card[3].Info_Hand = ""; button4.Image = NullCard; 
                     label7.Text = ""; label8.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[3].Magic_status = 0;
                 }
                 if(button5.Enabled == false && Magicbool5 > 0)
                 {
@@ -1273,6 +1303,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool5 = 0; Magicbool5 = 0;
                     textBox2.Text = ""; Info_Card[4].Info_Hand = ""; button5.Image = NullCard; 
                     label9.Text = ""; label10.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[4].Magic_status = 0;
                 }
                 Card_FieldFull_Fieldnull(); buttonTrue_False();
             }
@@ -1301,7 +1332,8 @@ namespace C3_Form_testing
                     MyField_status[2].FieldATK_status = Mycardstatus[0].MyATK_status;
                     button1.Image = NullCard; 
                     label1.Text = ""; label2.Text = "";
-                    button8.Text = "필드에 카드가 있습니다"; 
+                    button8.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[0].MyHP_status = 0; Mycardstatus[0].MyATK_status = 0;
                 }
                 if (button2.Enabled == false && Magicbool2 == 0)
                 {
@@ -1312,6 +1344,7 @@ namespace C3_Form_testing
                     button2.Image = NullCard;
                     label3.Text = ""; label4.Text = "";
                     button8.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[1].MyHP_status = 0; Mycardstatus[1].MyATK_status = 0;
                 }
                 if (button3.Enabled == false && Magicbool3 == 0)
                 {
@@ -1322,6 +1355,7 @@ namespace C3_Form_testing
                     button3.Image = NullCard; 
                     label5.Text = ""; label6.Text = "";
                     button8.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[2].MyHP_status = 0; Mycardstatus[2].MyATK_status = 0;
                 }
                 if (button4.Enabled == false && Magicbool4 == 0)
                 {
@@ -1332,6 +1366,7 @@ namespace C3_Form_testing
                     button4.Image = NullCard;
                     label7.Text = ""; label8.Text = "";
                     button8.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[3].MyHP_status = 0; Mycardstatus[3].MyATK_status = 0;
                 }
                 if (button5.Enabled == false && Magicbool5 == 0)
                 {
@@ -1342,6 +1377,7 @@ namespace C3_Form_testing
                     button5.Image = NullCard;
                     label9.Text = ""; label10.Text = "";
                     button8.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[4].MyHP_status = 0; Mycardstatus[4].MyATK_status = 0;
                 }
                 if(button1.Enabled == false && Magicbool1 > 0)
                 {
@@ -1362,6 +1398,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool1 = 0; Magicbool1 = 0;
                     textBox2.Text = ""; Info_Card[0].Info_Hand = ""; button1.Image = NullCard; 
                     label1.Text = ""; label2.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[0].Magic_status = 0;
                 }
                 if(button2.Enabled == false && Magicbool2 > 0)
                 {
@@ -1382,6 +1419,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool2 = 0; Magicbool2 = 0;
                     textBox2.Text = ""; Info_Card[1].Info_Hand = ""; button2.Image = NullCard; 
                     label3.Text = ""; label4.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[1].Magic_status = 0;
                 }
                 if(button3.Enabled == false && Magicbool3 > 0)
                 {
@@ -1402,6 +1440,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool3 = 0; Magicbool3 = 0;
                     textBox2.Text = ""; Info_Card[2].Info_Hand = ""; button3.Image = NullCard;
                     label5.Text = ""; label6.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[2].Magic_status = 0;
                 }
                 if(button4.Enabled == false && Magicbool4 > 0 )
                 {
@@ -1422,6 +1461,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool4 = 0; Magicbool4 = 0;
                     textBox2.Text = ""; Info_Card[3].Info_Hand = ""; button4.Image = NullCard;
                     label7.Text = ""; label8.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[3].Magic_status = 0;
                 }
                 if(button5.Enabled == false && Magicbool5 > 0)
                 {
@@ -1442,6 +1482,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool5 = 0; Magicbool5 = 0;
                     textBox2.Text = ""; Info_Card[4].Info_Hand = ""; button5.Image = NullCard; 
                     label9.Text = ""; label10.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[4].Magic_status = 0;
                 }
                 Card_FieldFull_Fieldnull(); buttonTrue_False();
             }
@@ -1471,6 +1512,7 @@ namespace C3_Form_testing
                     button1.Image = NullCard;
                     label1.Text = ""; label2.Text = "";
                     button9.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[0].MyHP_status = 0; Mycardstatus[0].MyATK_status = 0;
                 }
                 if (button2.Enabled == false && Magicbool2 == 0)
                 {
@@ -1481,6 +1523,7 @@ namespace C3_Form_testing
                     button2.Image = NullCard;
                     label3.Text = ""; label4.Text = "";
                     button9.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[1].MyHP_status = 0; Mycardstatus[1].MyATK_status = 0;
                 }
                 if (button3.Enabled == false && Magicbool3 == 0)
                 {
@@ -1491,6 +1534,7 @@ namespace C3_Form_testing
                     button3.Image = NullCard;
                     label5.Text = ""; label6.Text = "";
                     button9.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[2].MyHP_status = 0; Mycardstatus[2].MyATK_status = 0;
                 }
                 if (button4.Enabled == false && Magicbool4 == 0)
                 {
@@ -1501,6 +1545,7 @@ namespace C3_Form_testing
                     button4.Image = NullCard;
                     label7.Text = ""; label8.Text = "";
                     button9.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[3].MyHP_status = 0; Mycardstatus[3].MyATK_status = 0;
                 }
                 if (button5.Enabled == false && Magicbool5 == 0)
                 {
@@ -1511,6 +1556,7 @@ namespace C3_Form_testing
                     button5.Image = NullCard;
                     label9.Text = ""; label10.Text = "";
                     button9.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[4].MyHP_status = 0; Mycardstatus[4].MyATK_status = 0;
                 }
 
                 if(button1.Enabled == false && Magicbool1 > 0)
@@ -1532,6 +1578,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool1 = 0; Magicbool1 = 0;
                     textBox2.Text = ""; Info_Card[0].Info_Hand = ""; button1.Image = NullCard; 
                     label1.Text = ""; label2.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[0].Magic_status = 0;
                 }
                 if(button2.Enabled == false && Magicbool2 > 0)
                 {
@@ -1552,6 +1599,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool2 = 0; Magicbool2 = 0;
                     textBox2.Text = ""; Info_Card[1].Info_Hand = ""; button2.Image = NullCard; 
                     label3.Text = ""; label4.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[1].Magic_status = 0;
                 }
                 if(button3.Enabled == false && Magicbool3 > 0)
                 {
@@ -1572,6 +1620,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool3 = 0; Magicbool3 = 0;
                     textBox2.Text = ""; Info_Card[2].Info_Hand = ""; button3.Image = NullCard; 
                     label5.Text = ""; label6.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[2].Magic_status = 0;
                 }
                 if(button4.Enabled == false && Magicbool4 > 0)
                 {
@@ -1592,6 +1641,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool4 = 0; Magicbool4 = 0;
                     textBox2.Text = ""; Info_Card[3].Info_Hand = ""; button4.Image = NullCard; 
                     label7.Text = ""; label8.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[3].Magic_status = 0;
                 }
                 if(button5.Enabled == false && Magicbool5 > 0)
                 {
@@ -1612,6 +1662,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool5 = 0; Magicbool5 = 0;
                     textBox2.Text = ""; Info_Card[4].Info_Hand = ""; button5.Image = NullCard; 
                     label9.Text = ""; label10.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[4].Magic_status = 0;
                 }
                 Card_FieldFull_Fieldnull(); buttonTrue_False();
             }
@@ -1641,6 +1692,7 @@ namespace C3_Form_testing
                     button1.Image = NullCard;
                     label1.Text = ""; label2.Text = "";
                     button10.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[0].MyHP_status = 0; Mycardstatus[0].MyATK_status = 0;
                 }
                 if (button2.Enabled == false && Magicbool2 == 0)
                 {
@@ -1651,6 +1703,7 @@ namespace C3_Form_testing
                     button2.Image = NullCard;
                     label3.Text = ""; label4.Text = "";
                     button10.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[1].MyHP_status = 0; Mycardstatus[1].MyATK_status = 0;
                 }
                 if (button3.Enabled == false && Magicbool3 == 0)
                 {
@@ -1661,6 +1714,7 @@ namespace C3_Form_testing
                     button3.Image = NullCard;
                     label5.Text = ""; label6.Text = "";
                     button10.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[2].MyHP_status = 0; Mycardstatus[2].MyATK_status = 0;
                 }
                 if (button4.Enabled == false && Magicbool4 == 0)
                 {
@@ -1671,6 +1725,7 @@ namespace C3_Form_testing
                     button4.Image = NullCard;
                     label7.Text = ""; label8.Text = "";
                     button10.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[3].MyHP_status = 0; Mycardstatus[3].MyATK_status = 0;
                 }
                 if (button5.Enabled == false && Magicbool5 == 0)
                 {
@@ -1681,6 +1736,7 @@ namespace C3_Form_testing
                     button5.Image = NullCard;
                     label9.Text = ""; label10.Text = "";
                     button10.Text = "필드에 카드가 있습니다";
+                    Mycardstatus[4].MyHP_status = 0; Mycardstatus[4].MyATK_status = 0;
                 }
 
                 if(button1.Enabled == false && Magicbool1 > 0)
@@ -1702,6 +1758,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool1 = 0; Magicbool1 = 0;
                     textBox2.Text = ""; Info_Card[0].Info_Hand = ""; button1.Image = NullCard; 
                     label1.Text = ""; label2.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[0].Magic_status = 0;
                 }
                 if(button2.Enabled == false && Magicbool2 > 0)
                 {
@@ -1722,6 +1779,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool2 = 0; Magicbool2 = 0;
                     textBox2.Text = ""; Info_Card[1].Info_Hand = ""; button2.Image = NullCard; 
                     label3.Text = ""; label4.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[1].Magic_status = 0;
                 }
                 if(button3.Enabled == false && Magicbool3 > 0)
                 {
@@ -1742,6 +1800,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool3 = 0; Magicbool3 = 0;
                     textBox2.Text = ""; Info_Card[2].Info_Hand = ""; button3.Image = NullCard; 
                     label5.Text = ""; label6.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[2].Magic_status = 0;
                 }
                 if(button4.Enabled == false && Magicbool4 > 0)
                 {
@@ -1762,6 +1821,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool4 = 0; Magicbool4 = 0;
                     textBox2.Text = ""; Info_Card[3].Info_Hand = ""; button4.Image = NullCard; 
                     label7.Text = ""; label8.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[3].Magic_status = 0;
                 }
                 if(button5.Enabled == false && Magicbool5 > 0)
                 {
@@ -1782,6 +1842,7 @@ namespace C3_Form_testing
                     pictureBox11.Image = NullCard; Handbool5 = 0; Magicbool5 = 0;
                     textBox2.Text = ""; Info_Card[4].Info_Hand = ""; button5.Image = NullCard;
                     label9.Text = ""; label10.Text = ""; label33.Text = ""; label34.Text = "";
+                    Magicstatus[4].Magic_status = 0;
                 }
                 Card_FieldFull_Fieldnull(); buttonTrue_False();
             }
@@ -1804,12 +1865,13 @@ namespace C3_Form_testing
             {
                 textBox2.Text = "첫번째 나의 카드 정보\r\n" + Info_Card[0].Info_Hand;
                 label33.Text = label1.Text; label34.Text = label2.Text;
-                pictureBox11.Image = button1.Image; button1.Enabled = false;
+                pictureBox11.Image = button1.Image;
                 if (button2.Enabled == false) { button2.Enabled = true; }
            else if (button3.Enabled == false) { button3.Enabled = true; }
            else if (button4.Enabled == false) { button4.Enabled = true; }
            else if (button5.Enabled == false) { button5.Enabled = true; }
-           else if (Handbool1 == 0) { button1.Enabled = true; }
+                if (Handbool1 == 0) { button1.Enabled = true; }
+                if (Handbool1 == 1) { button1.Enabled = false; }
 
                 if (e.Button == MouseButtons.Left && Magicbool1 > 0)
                 { MagicSpell_AddCard(); }
@@ -1824,7 +1886,7 @@ namespace C3_Form_testing
                     textBox2.Text = Info_Card[0].Info_Hand = "";
                     Card_FieldFull_Fieldnull(); button12.Visible = true;
                 }
-                if (button12.Enabled == false && e.Button == MouseButtons.Left && Handbool1 == 0)
+                if (button12.Visible == false && e.Button == MouseButtons.Left && Handbool1 == 0)
                 { textBox1.Text = "그곳에는 버릴 카드가 없습니다"; button12.Visible = true; button1.Enabled = true; }
             }
         }
@@ -1834,12 +1896,13 @@ namespace C3_Form_testing
             {
                 textBox2.Text = "두번째 나의 카드 정보\r\n" + Info_Card[1].Info_Hand;
                 label33.Text = label3.Text; label34.Text = label4.Text;
-                pictureBox11.Image = button2.Image; button2.Enabled = false;
+                pictureBox11.Image = button2.Image;
                 if (button1.Enabled == false) { button1.Enabled = true; }
            else if (button3.Enabled == false) { button3.Enabled = true; }
            else if (button4.Enabled == false) { button4.Enabled = true; }
            else if (button5.Enabled == false) { button5.Enabled = true; }
-           else if (Handbool2 == 0) { button2.Enabled = true; }
+                if (Handbool2 == 0) { button2.Enabled = true; }
+                if (Handbool2 == 1) { button2.Enabled = false; }
 
                 if (e.Button == MouseButtons.Left && Magicbool2 > 0)
                 { MagicSpell_AddCard(); }
@@ -1854,7 +1917,7 @@ namespace C3_Form_testing
                     textBox2.Text = Info_Card[1].Info_Hand = "";
                     Card_FieldFull_Fieldnull(); button12.Visible = true;
                 }
-                if (button12.Enabled == false && e.Button == MouseButtons.Left && Handbool2 == 0)
+                if (button12.Visible == false && e.Button == MouseButtons.Left && Handbool2 == 0)
                 { textBox1.Text = "그곳에는 버릴 카드가 없습니다"; button12.Visible = true; button2.Enabled = true; }
             }
         }
@@ -1864,12 +1927,13 @@ namespace C3_Form_testing
             {
                 textBox2.Text = "세번째 나의 카드 정보\r\n" + Info_Card[2].Info_Hand;
                 label33.Text = label5.Text; label34.Text = label6.Text;
-                pictureBox11.Image = button3.Image; button3.Enabled = false;
+                pictureBox11.Image = button3.Image;
                 if (button1.Enabled == false) { button1.Enabled = true; }
            else if (button2.Enabled == false) { button2.Enabled = true; }
            else if (button4.Enabled == false) { button4.Enabled = true; }
            else if (button5.Enabled == false) { button5.Enabled = true; }
-           else if (Handbool3 == 0) { button3.Enabled = true; }
+                if (Handbool3 == 0) { button3.Enabled = true; }
+                if (Handbool3 == 1) { button3.Enabled = false; }
             }
             if (e.Button == MouseButtons.Left && Magicbool3 > 0)
             { MagicSpell_AddCard(); }
@@ -1884,7 +1948,7 @@ namespace C3_Form_testing
                 textBox2.Text = Info_Card[2].Info_Hand = "";
                 Card_FieldFull_Fieldnull(); button12.Visible = true;
             }
-            if (button12.Enabled == false && e.Button == MouseButtons.Left && Handbool3 == 0)
+            if (button12.Visible == false && e.Button == MouseButtons.Left && Handbool3 == 0)
             { textBox1.Text = "그곳에는 버릴 카드가 없습니다"; button12.Visible = true; button3.Enabled = true; }
         }
         private void Card4_button(object sender, MouseEventArgs e)
@@ -1893,12 +1957,13 @@ namespace C3_Form_testing
             {
                 textBox2.Text = "네번째 나의 카드 정보\r\n" + Info_Card[3].Info_Hand;
                 label33.Text = label7.Text; label34.Text = label8.Text;
-                pictureBox11.Image = button4.Image; button4.Enabled = false;
+                pictureBox11.Image = button4.Image;
                 if (button1.Enabled == false) { button1.Enabled = true; }
            else if (button2.Enabled == false) { button2.Enabled = true; }
            else if (button3.Enabled == false) { button3.Enabled = true; }
            else if (button5.Enabled == false) { button5.Enabled = true; }
-           else if (Handbool4 == 0) { button4.Enabled = true; }
+                if (Handbool4 == 0) { button4.Enabled = true; }
+                if (Handbool4 == 1) { button4.Enabled = false; }
             }
             if (e.Button == MouseButtons.Left && Magicbool4 > 0)
             { MagicSpell_AddCard(); }
@@ -1913,7 +1978,7 @@ namespace C3_Form_testing
                 textBox2.Text = Info_Card[3].Info_Hand = "";
                 Card_FieldFull_Fieldnull(); button12.Visible = true;
             }
-            if (button12.Enabled == false && e.Button == MouseButtons.Left && Handbool4 == 0)
+            if (button12.Visible == false && e.Button == MouseButtons.Left && Handbool4 == 0)
             { textBox1.Text = "그곳에는 버릴 카드가 없습니다"; button12.Visible = true; button4.Enabled = true; }
         }
         private void Card5_button(object sender, MouseEventArgs e)
@@ -1927,7 +1992,8 @@ namespace C3_Form_testing
            else if (button2.Enabled == false) { button2.Enabled = true; }
            else if (button3.Enabled == false) { button3.Enabled = true; }
            else if (button4.Enabled == false) { button4.Enabled = true; }
-           else if (Handbool5 == 0) { button5.Enabled = true; }
+                if (Handbool5 == 0) { button5.Enabled = true; }
+                if (Handbool5 == 1) { button5.Enabled = false; }
             }
             if (e.Button == MouseButtons.Left && Magicbool5 > 0)
             { MagicSpell_AddCard(); }
@@ -1942,7 +2008,7 @@ namespace C3_Form_testing
                 textBox2.Text = Info_Card[4].Info_Hand = "";
                 Card_FieldFull_Fieldnull(); button12.Visible = true;
             }
-            if (button12.Enabled == false && e.Button == MouseButtons.Left && Handbool5 == 0)
+            if (button12.Visible == false && e.Button == MouseButtons.Left && Handbool5 == 0)
             { textBox1.Text = "그곳에는 버릴 카드가 없습니다"; button12.Visible = true; button5.Enabled = true; }
         }
         private void FieldCard_Info1(object sender, MouseEventArgs e)
@@ -2002,7 +2068,14 @@ namespace C3_Form_testing
             }
         }
         private void MagicClick(object sender, EventArgs e)
-        { if (BattlePhase == 0) { Card_FieldFull_Fieldnull(); if (button12.Visible == false) button12.Visible = true; } }
+        { 
+            if (BattlePhase == 0) 
+            { 
+                Card_FieldFull_Fieldnull(); 
+                if (button12.Visible == false) button12.Visible = true;
+                if (textBox1.Text != null) textBox1.Text = "";
+            } 
+        }
 
         public Form1(Form5 form5)
         {
