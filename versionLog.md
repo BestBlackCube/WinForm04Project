@@ -1,48 +1,28 @@
-# WinForm04 Project 카드 게임 개발 4.4.5v
+# WinForm04 Project 카드 게임 개발 5.5.6v
 ## 기능 설명
-설정 창을 통해 세부적인 조정이 가능하며, 게임을 처음 접함 플레이어들을 위한 튜토리얼을 개발.  
-인게임 중 폰트를 변경이 가능하고, 전체화면, 창 모드 등 부가적 기능을 추가.  
-전투 밸런스 추가 및 전투 이펙트 추가.
+기본 UI 배경 이미지에서 직접 제작한 UI들로 비주얼 업데이트.  
+화면 비율 설정을 전체화면/창화면을 사용하지만 PC용 화면과 노트북 등 화면 비율을 다르기 때문에 선택폭을 늘림.  
+신속한 게임 플레이를 원하는 플레이어들을 위한 전투 딜레이 제거 기능 추가.
 
 
 
 - ## Form01
-    - ### [부가 기능 설정 창](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L146-L150)
-        - Form4에 만들어 둔 부가 기능 설정 창을 연결하여 Form4()의 UI와 값을 불러온다.
-    - ### [승패 판정 이펙트](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L514-L521)
-        - [Graphics 클래스](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L436-L445)를 사용하여 직관적인 네모칸을 만들고, [Pen 클래스](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L451-L452)를 사용하여 승패 판정을 알아 볼 수 있는  
-        네모칸 색 변경으로, 시각적 효과를 볼 수 있다.
-    - ### [데미지 반감 기능](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L531-L555)
-        - 플레이어가 턴 종료 할 경우, 마주보고 있는 카드끼리 전투를 시작하는데 앞서 마주보고 있는 카드의 능력치를   
-        비교하여 더큰 값을 가지고 있는 카드는 전체 데미지의 50%만 받는다.  
-        (정수 값 계산식을 사용하여 소수점 일 경우 0.5는 소멸 된다 5 / 2 = 2.5 -> 2)
-- ## Form03
-    - ### [튜토리얼](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form3.cs)
-        - 게임에 처음 접하는 플레이어들을 위한 게임 사용 설명서로 설명서의 이미지는  
-        Resource에 넣어둔 이미지 파일을 불러와 시각적인 자료를 보여준다.
-        - 버튼을 눌렀을때 증감식을 사용하여 정수의 값이 바뀌며 각 값에 맞는 이미지와 설명란이 바뀐다.
-- ## Form04
-    - ### [설정창](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form4.cs)
-        - 부가적 기능을 조절이 가능한 메인 화면이며, 게임 난이도, 튜토리얼, 전체화면/창화면 변경, 폰트 변경 등  
-        게임 외적인 부분을 모집하여 제작한 화면이다. 
-    - ### [폰트 설정](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L152-L172)
-        - 인게임 내부에서 TextBox를 사용한 모든 글자의 폰트를 본인의 취향대로 변경이 가능하다.
-    - ### [화면 비율 조절](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form4.cs#L58-L71)
-        - Form4 전체화면/창화면의 체크박스 체크 여부의 값을 가져와 Form1에 있는 전체화면 비율과 창 화면 비율을  
-        나누어 불러온 값에 맞게 게임 화면의 크기가 변경된다.
-    - ### 난이도 설정
-        - 이전과 같이 Form2의 화면을 참조하여 중간에 난이도를 재설정 가능하다.
-    - ### 튜토리얼
-        - 튜토리얼 Form3을 참조하여 언제든지 튜토리얼을 볼 수 있다.
-    - ### 화면 비율 조절
-        - 체크 박스를 사용하여 전체화면과 창 화면을 언제든지 취향대로 조절 할 수 있다.
+    - ### [전투 딜레이](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L33-L37)
+        - 기존의 전투 딜레이의 기다리는 시간을 On,Off기능을 추가하여 취향에 맞는 전투가 가능하다.
+    - ### [화면비율](https://github.com/BestBlackCube/WinForm04Project/blob/main/C3%20Form%20testing/Form1.cs#L73-L152)
+        - 기존의 비율 설정은 전체화면과 창모드를 번갈아 가며 임의대로 조절 하였지만,  
+          크기를 지정하여 전체화면과 창모드를 바꿔가는 방식으로 변경.  
+          (1920x1080, 1440x900)
 
 - ## 버그
-    - ### 난이도 설정 버튼 이외의 클릭
-        - 난이도 선택 페이지가 나온 상태로 뒷 배경에 있는 UI 클릭 시 실행 되는 버그
-    - ### 빈화면 필드 소환
-        - 손패에서 사용이 안된 카드를 클릭후 빈 손패 카드를 클릭 시 빈 카드가 선택되며 필드에 소환이 가능하며,  
-        아무 데이터가 없는 빈공간으로 필드가 잠기는 버그
+    - ### 메인 화면 화면 비율
+        - 메인 화면 설정창 사용시 화면 비율의 고정값으로 인해 버튼이 고정된 값에서 이동하지 않음.
+    - ### 튜토리얼
+        - 튜토리얼 첫장의 이미지가 버튼을 누르지 않으면 증감값이 들어가지 않은 상태라 기본 화면을 불러옴
+    - ### 버리기 버튼
+        - 인게임 도중 버리기 기능을 켠 상태로 턴종료 버튼을 누르면 버리기 기능이 활성화 된 상태로 남아있음.
+    - ### 설정창
+        - 인게임 도중 설정 버튼 클릭시 강제 전체 화면으로 되돌아감.
 
 ## 버전 업데이트 지연
 ```
