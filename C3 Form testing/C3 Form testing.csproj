@@ -58,6 +58,18 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -65,6 +77,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -88,36 +106,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MagicCard1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MagicCard2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MagicCard3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MagicCard4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MagicCard5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MagicCard6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MagicCard7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MagicCard8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MagicCard9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MagicCard10.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nullCard.png" />
@@ -151,6 +139,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MonsterCard10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard_HP1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard_HP2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard_HP3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard_ATK1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard_ATK2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicCard_ATK3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fild_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\command_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MYHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AIHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Easy_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nomal_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nullslot.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

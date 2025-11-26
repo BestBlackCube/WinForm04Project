@@ -63,9 +63,9 @@ namespace C3_Form_testing.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap MagicCard1 {
+        internal static System.Drawing.Bitmap AIHP {
             get {
-                object obj = ResourceManager.GetObject("MagicCard1", resourceCulture);
+                object obj = ResourceManager.GetObject("AIHP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace C3_Form_testing.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap MagicCard10 {
+        internal static System.Drawing.Bitmap command_button {
             get {
-                object obj = ResourceManager.GetObject("MagicCard10", resourceCulture);
+                object obj = ResourceManager.GetObject("command_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace C3_Form_testing.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap MagicCard2 {
+        internal static System.Drawing.Bitmap Easy_button {
             get {
-                object obj = ResourceManager.GetObject("MagicCard2", resourceCulture);
+                object obj = ResourceManager.GetObject("Easy_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace C3_Form_testing.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap MagicCard3 {
+        internal static System.Drawing.Bitmap Fild_button {
             get {
-                object obj = ResourceManager.GetObject("MagicCard3", resourceCulture);
+                object obj = ResourceManager.GetObject("Fild_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace C3_Form_testing.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap MagicCard4 {
+        internal static System.Drawing.Bitmap Hard_button {
             get {
-                object obj = ResourceManager.GetObject("MagicCard4", resourceCulture);
+                object obj = ResourceManager.GetObject("Hard_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace C3_Form_testing.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap MagicCard5 {
+        internal static System.Drawing.Bitmap MagicCard_ATK1 {
             get {
-                object obj = ResourceManager.GetObject("MagicCard5", resourceCulture);
+                object obj = ResourceManager.GetObject("MagicCard_ATK1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace C3_Form_testing.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap MagicCard6 {
+        internal static System.Drawing.Bitmap MagicCard_ATK2 {
             get {
-                object obj = ResourceManager.GetObject("MagicCard6", resourceCulture);
+                object obj = ResourceManager.GetObject("MagicCard_ATK2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace C3_Form_testing.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap MagicCard7 {
+        internal static System.Drawing.Bitmap MagicCard_ATK3 {
             get {
-                object obj = ResourceManager.GetObject("MagicCard7", resourceCulture);
+                object obj = ResourceManager.GetObject("MagicCard_ATK3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace C3_Form_testing.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap MagicCard8 {
+        internal static System.Drawing.Bitmap MagicCard_HP1 {
             get {
-                object obj = ResourceManager.GetObject("MagicCard8", resourceCulture);
+                object obj = ResourceManager.GetObject("MagicCard_HP1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,19 @@ namespace C3_Form_testing.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap MagicCard9 {
+        internal static System.Drawing.Bitmap MagicCard_HP2 {
             get {
-                object obj = ResourceManager.GetObject("MagicCard9", resourceCulture);
+                object obj = ResourceManager.GetObject("MagicCard_HP2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap MagicCard_HP3 {
+            get {
+                object obj = ResourceManager.GetObject("MagicCard_HP3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +273,39 @@ namespace C3_Form_testing.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap MYHP {
+            get {
+                object obj = ResourceManager.GetObject("MYHP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap nomal_button {
+            get {
+                object obj = ResourceManager.GetObject("nomal_button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap nullCard {
             get {
                 object obj = ResourceManager.GetObject("nullCard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap nullslot {
+            get {
+                object obj = ResourceManager.GetObject("nullslot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
