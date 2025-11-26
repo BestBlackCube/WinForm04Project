@@ -13,17 +13,22 @@ namespace C3_Form_testing
     public partial class Form2 : Form
     {// Form1 F1값을 만들어 Form1의 정보를 불러옴
         private Form1 F1;
+
+        private Form5 _Form5;
         private Boolean chkFirst;
-        public Form2(Form1 f1,Boolean chk)
+        public Form2(Form1 f1,Boolean chk,Form5 f5)
         {
             F1 = f1;
+            _Form5 = f5;
             chkFirst = chk;
             InitializeComponent();
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            if(chkFirst == true) { button5.Visible = false; }
+            if(chkFirst == true) { 
+                button5.Visible = false; 
+            }
         }
 
         public int GameCount;
@@ -54,6 +59,14 @@ namespace C3_Form_testing
             Close();
         }
 
-        
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (chkFirst)
+            {
+                F1.Show();
+                _Form5.Visible = false;
+            }
+
+        }
     }
 }

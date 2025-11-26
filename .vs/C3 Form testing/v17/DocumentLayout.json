@@ -3,7 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|c:\\users\\1cjsw\\desktop\\winform\\winform04project\\c3 form testing\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|c:\\users\\1cjsw\\desktop\\winform\\winform04project\\c3 form testing\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|solutionrelative:c3 form testing\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\c3 form testing\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|solutionrelative:c3 form testing\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\c3 form testing\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|solutionrelative:c3 form testing\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\c3 form testing\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|solutionrelative:c3 form testing\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\c3 form testing\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24330851-CBF9-482F-92B4-F28F25C8E313}|C3 Form testing\\C3 Form testing.csproj|solutionrelative:c3 form testing\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,23 +50,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form3.cs",
+              "RelativeDocumentMoniker": "C3 Form testing\\Form3.cs",
+              "ToolTip": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form3.cs",
+              "RelativeToolTip": "C3 Form testing\\Form3.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAQwCgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T07:51:33.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Form3.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form3.cs",
+              "RelativeDocumentMoniker": "C3 Form testing\\Form3.cs",
+              "ToolTip": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form3.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "C3 Form testing\\Form3.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T07:51:31.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form5.cs",
+              "DocumentMoniker": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form5.cs",
+              "RelativeDocumentMoniker": "C3 Form testing\\Form5.cs",
+              "ToolTip": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form5.cs",
+              "RelativeToolTip": "C3 Form testing\\Form5.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T07:51:16.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form5.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form5.cs",
+              "RelativeDocumentMoniker": "C3 Form testing\\Form5.cs",
+              "ToolTip": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form5.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "C3 Form testing\\Form5.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T07:51:14.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "C3 Form testing\\Form1.Designer.cs",
               "ToolTip": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form1.Designer.cs",
               "RelativeToolTip": "C3 Form testing\\Form1.Designer.cs",
-              "ViewState": "AgIAAAADAAAAAAAAAAAAwA4DAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAAsDAAAAAAAAAAAAwBkDAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T03:14:08.514Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form2.cs",
               "RelativeDocumentMoniker": "C3 Form testing\\Form2.cs",
@@ -62,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Program.cs",
               "RelativeDocumentMoniker": "C3 Form testing\\Program.cs",
@@ -74,20 +137,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form1.cs",
               "RelativeDocumentMoniker": "C3 Form testing\\Form1.cs",
               "ToolTip": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form1.cs",
               "RelativeToolTip": "C3 Form testing\\Form1.cs",
-              "ViewState": "AgIAAOgBAAAAAAAAAAAAAP0BAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAswDIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T03:08:54.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T03:08:54.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Form1.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Form1.cs",
               "RelativeDocumentMoniker": "C3 Form testing\\Form1.cs",
@@ -98,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\Users\\1cjsw\\Desktop\\WinForm\\WinForm04Project\\C3 Form testing\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "C3 Form testing\\Properties\\Resources.resx",

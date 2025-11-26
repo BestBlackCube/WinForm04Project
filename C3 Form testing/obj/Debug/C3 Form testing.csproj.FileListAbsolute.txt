@@ -159,6 +159,145 @@ E:\C3\대학교 윈도우 조별과제\11 - 22\C3 Form testing\obj\Debug\C3 Form
 E:\C3\대학교 윈도우 조별과제\11 - 22\C3 Form testing\obj\Debug\C3 Form testing.csproj.CoreCompileInputs.cache
 E:\C3\대학교 윈도우 조별과제\11 - 22\C3 Form testing\obj\Debug\C3 Form testing.exe
 E:\C3\대학교 윈도우 조별과제\11 - 22\C3 Form testing\obj\Debug\C3 Form testing.pdb
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing Backup\11 - 23\C3 Form testing\bin\Release\C3 Form testing.exe.config
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing Backup\11 - 23\C3 Form testing\bin\Release\C3 Form testing.exe
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing Backup\11 - 23\C3 Form testing\bin\Release\C3 Form testing.pdb
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing Backup\11 - 23\C3 Form testing\obj\Debug\C3 Form testing.csproj.AssemblyReference.cache
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing Backup\11 - 23\C3 Form testing\obj\Debug\C3_Form_testing.Form1.resources
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing Backup\11 - 23\C3 Form testing\obj\Debug\C3_Form_testing.Form2.resources
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing Backup\11 - 23\C3 Form testing\obj\Debug\C3_Form_testing.Form3.resources
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing Backup\11 - 23\C3 Form testing\obj\Debug\C3_Form_testing.Form4.resources
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing Backup\11 - 23\C3 Form testing\obj\Debug\C3_Form_testing.Properties.Resources.resources
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing Backup\11 - 23\C3 Form testing\obj\Debug\C3 Form testing.csproj.GenerateResource.cache
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing Backup\11 - 23\C3 Form testing\obj\Debug\C3 Form testing.csproj.CoreCompileInputs.cache
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing Backup\11 - 23\C3 Form testing\obj\Debug\C3 Form testing.exe
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing Backup\11 - 23\C3 Form testing\obj\Debug\C3 Form testing.pdb
+C:\Users\USER\Desktop\팀플\C3_project_hub-main\C3_project_hub-main\C3_Window_project\C3 Form testing\bin\Release\C3 Form testing.exe.config
+C:\Users\USER\Desktop\팀플\C3_project_hub-main\C3_project_hub-main\C3_Window_project\C3 Form testing\bin\Release\C3 Form testing.exe
+C:\Users\USER\Desktop\팀플\C3_project_hub-main\C3_project_hub-main\C3_Window_project\C3 Form testing\bin\Release\C3 Form testing.pdb
+C:\Users\USER\Desktop\팀플\C3_project_hub-main\C3_project_hub-main\C3_Window_project\C3 Form testing\obj\Debug\C3 Form testing.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\팀플\C3_project_hub-main\C3_project_hub-main\C3_Window_project\C3 Form testing\obj\Debug\C3_Form_testing.Form1.resources
+C:\Users\USER\Desktop\팀플\C3_project_hub-main\C3_project_hub-main\C3_Window_project\C3 Form testing\obj\Debug\C3_Form_testing.Form2.resources
+C:\Users\USER\Desktop\팀플\C3_project_hub-main\C3_project_hub-main\C3_Window_project\C3 Form testing\obj\Debug\C3_Form_testing.Form3.resources
+C:\Users\USER\Desktop\팀플\C3_project_hub-main\C3_project_hub-main\C3_Window_project\C3 Form testing\obj\Debug\C3_Form_testing.Form4.resources
+C:\Users\USER\Desktop\팀플\C3_project_hub-main\C3_project_hub-main\C3_Window_project\C3 Form testing\obj\Debug\C3_Form_testing.Properties.Resources.resources
+C:\Users\USER\Desktop\팀플\C3_project_hub-main\C3_project_hub-main\C3_Window_project\C3 Form testing\obj\Debug\C3 Form testing.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\팀플\C3_project_hub-main\C3_project_hub-main\C3_Window_project\C3 Form testing\obj\Debug\C3 Form testing.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\팀플\C3_project_hub-main\C3_project_hub-main\C3_Window_project\C3 Form testing\obj\Debug\C3 Form testing.exe
+C:\Users\USER\Desktop\팀플\C3_project_hub-main\C3_project_hub-main\C3_Window_project\C3 Form testing\obj\Debug\C3 Form testing.pdb
+E:\C3\대학교 윈도우 조별과제\11 - 23\C3 Form testing\bin\Release\C3 Form testing.exe.config
+E:\C3\대학교 윈도우 조별과제\11 - 23\C3 Form testing\bin\Release\C3 Form testing.exe
+E:\C3\대학교 윈도우 조별과제\11 - 23\C3 Form testing\bin\Release\C3 Form testing.pdb
+E:\C3\대학교 윈도우 조별과제\11 - 23\C3 Form testing\obj\Debug\C3 Form testing.csproj.AssemblyReference.cache
+E:\C3\대학교 윈도우 조별과제\11 - 23\C3 Form testing\obj\Debug\C3_Form_testing.Form1.resources
+E:\C3\대학교 윈도우 조별과제\11 - 23\C3 Form testing\obj\Debug\C3_Form_testing.Form2.resources
+E:\C3\대학교 윈도우 조별과제\11 - 23\C3 Form testing\obj\Debug\C3_Form_testing.Form3.resources
+E:\C3\대학교 윈도우 조별과제\11 - 23\C3 Form testing\obj\Debug\C3_Form_testing.Form4.resources
+E:\C3\대학교 윈도우 조별과제\11 - 23\C3 Form testing\obj\Debug\C3_Form_testing.Properties.Resources.resources
+E:\C3\대학교 윈도우 조별과제\11 - 23\C3 Form testing\obj\Debug\C3 Form testing.csproj.GenerateResource.cache
+E:\C3\대학교 윈도우 조별과제\11 - 23\C3 Form testing\obj\Debug\C3 Form testing.csproj.CoreCompileInputs.cache
+E:\C3\대학교 윈도우 조별과제\11 - 23\C3 Form testing\obj\Debug\C3 Form testing.exe
+E:\C3\대학교 윈도우 조별과제\11 - 23\C3 Form testing\obj\Debug\C3 Form testing.pdb
+E:\C3\대학교 윈도우 조별과제\11 - 23\C3 Form testing\obj\Debug\C3_Form_testing.Form5.resources
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\bin\Release\C3 Form testing.exe.config
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\bin\Release\C3 Form testing.exe
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\bin\Release\C3 Form testing.pdb
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\obj\Debug\C3 Form testing.csproj.AssemblyReference.cache
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\obj\Debug\C3 Form testing.csproj.SuggestedBindingRedirects.cache
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\obj\Debug\C3_Form_testing.Form1.resources
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\obj\Debug\C3_Form_testing.Form2.resources
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\obj\Debug\C3_Form_testing.Form3.resources
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\obj\Debug\C3_Form_testing.Form4.resources
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\obj\Debug\C3_Form_testing.Form5.resources
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\obj\Debug\C3_Form_testing.Properties.Resources.resources
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\obj\Debug\C3 Form testing.csproj.GenerateResource.cache
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\obj\Debug\C3 Form testing.csproj.CoreCompileInputs.cache
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\obj\Debug\C3 Form testing.exe
+C:\Users\Backdo\Desktop\11 - 24 1\C3 Form testing\obj\Debug\C3 Form testing.pdb
+E:\C3\대학교 윈도우 조별과제\11 - 24\C3 Form testing\bin\Release\C3 Form testing.exe.config
+E:\C3\대학교 윈도우 조별과제\11 - 24\C3 Form testing\bin\Release\C3 Form testing.exe
+E:\C3\대학교 윈도우 조별과제\11 - 24\C3 Form testing\bin\Release\C3 Form testing.pdb
+E:\C3\대학교 윈도우 조별과제\11 - 24\C3 Form testing\obj\Debug\C3 Form testing.csproj.AssemblyReference.cache
+E:\C3\대학교 윈도우 조별과제\11 - 24\C3 Form testing\obj\Debug\C3_Form_testing.Form1.resources
+E:\C3\대학교 윈도우 조별과제\11 - 24\C3 Form testing\obj\Debug\C3_Form_testing.Form2.resources
+E:\C3\대학교 윈도우 조별과제\11 - 24\C3 Form testing\obj\Debug\C3_Form_testing.Form3.resources
+E:\C3\대학교 윈도우 조별과제\11 - 24\C3 Form testing\obj\Debug\C3_Form_testing.Form4.resources
+E:\C3\대학교 윈도우 조별과제\11 - 24\C3 Form testing\obj\Debug\C3_Form_testing.Form5.resources
+E:\C3\대학교 윈도우 조별과제\11 - 24\C3 Form testing\obj\Debug\C3_Form_testing.Properties.Resources.resources
+E:\C3\대학교 윈도우 조별과제\11 - 24\C3 Form testing\obj\Debug\C3 Form testing.csproj.GenerateResource.cache
+E:\C3\대학교 윈도우 조별과제\11 - 24\C3 Form testing\obj\Debug\C3 Form testing.csproj.CoreCompileInputs.cache
+E:\C3\대학교 윈도우 조별과제\11 - 24\C3 Form testing\obj\Debug\C3 Form testing.exe
+E:\C3\대학교 윈도우 조별과제\11 - 24\C3 Form testing\obj\Debug\C3 Form testing.pdb
+C:\Users\Administrator\Desktop\11 - 24 3\C3 Form testing\bin\Release\C3 Form testing.exe.config
+C:\Users\Administrator\Desktop\11 - 24 3\C3 Form testing\bin\Release\C3 Form testing.exe
+C:\Users\Administrator\Desktop\11 - 24 3\C3 Form testing\bin\Release\C3 Form testing.pdb
+C:\Users\Administrator\Desktop\11 - 24 3\C3 Form testing\obj\Debug\C3 Form testing.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\11 - 24 3\C3 Form testing\obj\Debug\C3_Form_testing.Form1.resources
+C:\Users\Administrator\Desktop\11 - 24 3\C3 Form testing\obj\Debug\C3_Form_testing.Form2.resources
+C:\Users\Administrator\Desktop\11 - 24 3\C3 Form testing\obj\Debug\C3_Form_testing.Form3.resources
+C:\Users\Administrator\Desktop\11 - 24 3\C3 Form testing\obj\Debug\C3_Form_testing.Form4.resources
+C:\Users\Administrator\Desktop\11 - 24 3\C3 Form testing\obj\Debug\C3_Form_testing.Form5.resources
+C:\Users\Administrator\Desktop\11 - 24 3\C3 Form testing\obj\Debug\C3_Form_testing.Properties.Resources.resources
+C:\Users\Administrator\Desktop\11 - 24 3\C3 Form testing\obj\Debug\C3 Form testing.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\11 - 24 3\C3 Form testing\obj\Debug\C3 Form testing.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\11 - 24 3\C3 Form testing\obj\Debug\C3 Form testing.exe
+C:\Users\Administrator\Desktop\11 - 24 3\C3 Form testing\obj\Debug\C3 Form testing.pdb
+C:\Users\Administrator\Desktop\11 - 25\C3 Form testing\bin\Release\C3 Form testing.exe.config
+C:\Users\Administrator\Desktop\11 - 25\C3 Form testing\bin\Release\C3 Form testing.exe
+C:\Users\Administrator\Desktop\11 - 25\C3 Form testing\bin\Release\C3 Form testing.pdb
+C:\Users\Administrator\Desktop\11 - 25\C3 Form testing\obj\Debug\C3 Form testing.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\11 - 25\C3 Form testing\obj\Debug\C3_Form_testing.Form1.resources
+C:\Users\Administrator\Desktop\11 - 25\C3 Form testing\obj\Debug\C3_Form_testing.Form2.resources
+C:\Users\Administrator\Desktop\11 - 25\C3 Form testing\obj\Debug\C3_Form_testing.Form3.resources
+C:\Users\Administrator\Desktop\11 - 25\C3 Form testing\obj\Debug\C3_Form_testing.Form4.resources
+C:\Users\Administrator\Desktop\11 - 25\C3 Form testing\obj\Debug\C3_Form_testing.Form5.resources
+C:\Users\Administrator\Desktop\11 - 25\C3 Form testing\obj\Debug\C3_Form_testing.Properties.Resources.resources
+C:\Users\Administrator\Desktop\11 - 25\C3 Form testing\obj\Debug\C3 Form testing.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\11 - 25\C3 Form testing\obj\Debug\C3 Form testing.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\11 - 25\C3 Form testing\obj\Debug\C3 Form testing.exe
+C:\Users\Administrator\Desktop\11 - 25\C3 Form testing\obj\Debug\C3 Form testing.pdb
+C:\Users\USER\Desktop\팀플\11 - 25\C3 Form testing\bin\Release\C3 Form testing.exe.config
+C:\Users\USER\Desktop\팀플\11 - 25\C3 Form testing\bin\Release\C3 Form testing.exe
+C:\Users\USER\Desktop\팀플\11 - 25\C3 Form testing\bin\Release\C3 Form testing.pdb
+C:\Users\USER\Desktop\팀플\11 - 25\C3 Form testing\obj\Debug\C3 Form testing.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\팀플\11 - 25\C3 Form testing\obj\Debug\C3_Form_testing.Form1.resources
+C:\Users\USER\Desktop\팀플\11 - 25\C3 Form testing\obj\Debug\C3_Form_testing.Form2.resources
+C:\Users\USER\Desktop\팀플\11 - 25\C3 Form testing\obj\Debug\C3_Form_testing.Form3.resources
+C:\Users\USER\Desktop\팀플\11 - 25\C3 Form testing\obj\Debug\C3_Form_testing.Form4.resources
+C:\Users\USER\Desktop\팀플\11 - 25\C3 Form testing\obj\Debug\C3_Form_testing.Form5.resources
+C:\Users\USER\Desktop\팀플\11 - 25\C3 Form testing\obj\Debug\C3_Form_testing.Properties.Resources.resources
+C:\Users\USER\Desktop\팀플\11 - 25\C3 Form testing\obj\Debug\C3 Form testing.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\팀플\11 - 25\C3 Form testing\obj\Debug\C3 Form testing.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\팀플\11 - 25\C3 Form testing\obj\Debug\C3 Form testing.exe
+C:\Users\USER\Desktop\팀플\11 - 25\C3 Form testing\obj\Debug\C3 Form testing.pdb
+E:\C3\대학교 윈도우 조별과제\11 - 26\C3 Form testing\bin\Release\C3 Form testing.exe.config
+E:\C3\대학교 윈도우 조별과제\11 - 26\C3 Form testing\bin\Release\C3 Form testing.exe
+E:\C3\대학교 윈도우 조별과제\11 - 26\C3 Form testing\bin\Release\C3 Form testing.pdb
+E:\C3\대학교 윈도우 조별과제\11 - 26\C3 Form testing\obj\Debug\C3 Form testing.csproj.AssemblyReference.cache
+E:\C3\대학교 윈도우 조별과제\11 - 26\C3 Form testing\obj\Debug\C3_Form_testing.Form1.resources
+E:\C3\대학교 윈도우 조별과제\11 - 26\C3 Form testing\obj\Debug\C3_Form_testing.Form2.resources
+E:\C3\대학교 윈도우 조별과제\11 - 26\C3 Form testing\obj\Debug\C3_Form_testing.Form3.resources
+E:\C3\대학교 윈도우 조별과제\11 - 26\C3 Form testing\obj\Debug\C3_Form_testing.Form4.resources
+E:\C3\대학교 윈도우 조별과제\11 - 26\C3 Form testing\obj\Debug\C3_Form_testing.Form5.resources
+E:\C3\대학교 윈도우 조별과제\11 - 26\C3 Form testing\obj\Debug\C3_Form_testing.Properties.Resources.resources
+E:\C3\대학교 윈도우 조별과제\11 - 26\C3 Form testing\obj\Debug\C3 Form testing.csproj.GenerateResource.cache
+E:\C3\대학교 윈도우 조별과제\11 - 26\C3 Form testing\obj\Debug\C3 Form testing.csproj.CoreCompileInputs.cache
+E:\C3\대학교 윈도우 조별과제\11 - 26\C3 Form testing\obj\Debug\C3 Form testing.exe
+E:\C3\대학교 윈도우 조별과제\11 - 26\C3 Form testing\obj\Debug\C3 Form testing.pdb
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\C3_Window_project\C3 Form testing\bin\Release\C3 Form testing.exe.config
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\C3_Window_project\C3 Form testing\bin\Release\C3 Form testing.exe
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\C3_Window_project\C3 Form testing\bin\Release\C3 Form testing.pdb
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\C3_Window_project\C3 Form testing\obj\Debug\C3 Form testing.csproj.AssemblyReference.cache
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\C3_Window_project\C3 Form testing\obj\Debug\C3_Form_testing.Form1.resources
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\C3_Window_project\C3 Form testing\obj\Debug\C3_Form_testing.Form2.resources
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\C3_Window_project\C3 Form testing\obj\Debug\C3_Form_testing.Form3.resources
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\C3_Window_project\C3 Form testing\obj\Debug\C3_Form_testing.Form4.resources
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\C3_Window_project\C3 Form testing\obj\Debug\C3_Form_testing.Form5.resources
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\C3_Window_project\C3 Form testing\obj\Debug\C3_Form_testing.Properties.Resources.resources
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\C3_Window_project\C3 Form testing\obj\Debug\C3 Form testing.csproj.GenerateResource.cache
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\C3_Window_project\C3 Form testing\obj\Debug\C3 Form testing.csproj.CoreCompileInputs.cache
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\C3_Window_project\C3 Form testing\obj\Debug\C3 Form testing.exe
+C:\Users\BestBlackCube3\Desktop\파일루트\C3\C3 Form testing\C3_Window_project\C3 Form testing\obj\Debug\C3 Form testing.pdb
 C:\Users\1cjsw\Desktop\WinForm\WinForm04Project\C3 Form testing\bin\Release\C3 Form testing.exe.config
 C:\Users\1cjsw\Desktop\WinForm\WinForm04Project\C3 Form testing\bin\Release\C3 Form testing.exe
 C:\Users\1cjsw\Desktop\WinForm\WinForm04Project\C3 Form testing\bin\Release\C3 Form testing.pdb
@@ -167,6 +306,7 @@ C:\Users\1cjsw\Desktop\WinForm\WinForm04Project\C3 Form testing\obj\Debug\C3_For
 C:\Users\1cjsw\Desktop\WinForm\WinForm04Project\C3 Form testing\obj\Debug\C3_Form_testing.Form2.resources
 C:\Users\1cjsw\Desktop\WinForm\WinForm04Project\C3 Form testing\obj\Debug\C3_Form_testing.Form3.resources
 C:\Users\1cjsw\Desktop\WinForm\WinForm04Project\C3 Form testing\obj\Debug\C3_Form_testing.Form4.resources
+C:\Users\1cjsw\Desktop\WinForm\WinForm04Project\C3 Form testing\obj\Debug\C3_Form_testing.Form5.resources
 C:\Users\1cjsw\Desktop\WinForm\WinForm04Project\C3 Form testing\obj\Debug\C3_Form_testing.Properties.Resources.resources
 C:\Users\1cjsw\Desktop\WinForm\WinForm04Project\C3 Form testing\obj\Debug\C3 Form testing.csproj.GenerateResource.cache
 C:\Users\1cjsw\Desktop\WinForm\WinForm04Project\C3 Form testing\obj\Debug\C3 Form testing.csproj.CoreCompileInputs.cache

@@ -118,14 +118,83 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="nomal_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nomal_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MYHP100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MYHP100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nullslot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nullslot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MonsterCard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MonsterCard1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AIHP50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AIHP50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MonsterCard5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MonsterCard5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MYHP00" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MYHP00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TTI2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TTI2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AIHP70" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AIHP70.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AIHP10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AIHP10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TTI7_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TTI7_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hard_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hard_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MagicCard_ATK2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MagicCard_ATK2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TTI3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TTI3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MYHP30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MYHP30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TTI5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TTI5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MagicCard_HP3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MagicCard_HP3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MagicCard_ATK3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MagicCard_ATK3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="command_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\command_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MonsterCard10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MonsterCard10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MYHP10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MYHP10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TTI9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TTI9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MagicCard_HP2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MagicCard_HP2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MonsterCard9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MonsterCard9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TTI6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TTI6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AIHP30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AIHP30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MonsterCard2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MonsterCard2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,64 +202,79 @@
   <data name="Easy_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Easy_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hard_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hard_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AIHP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AIHP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nullCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nullCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fild_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fild_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MonsterCard5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MonsterCard5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MonsterCard7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MonsterCard7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MagicCard_HP2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MagicCard_HP2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MagicCard_ATK1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MagicCard_ATK1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MagicCard_ATK3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MagicCard_ATK3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MYHP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MYHP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MonsterCard4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MonsterCard4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MonsterCard6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MonsterCard6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MonsterCard8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MonsterCard8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MagicCard_HP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MagicCard_HP1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MagicCard_ATK2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MagicCard_ATK2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MagicCard_HP3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MagicCard_HP3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MonsterCard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MonsterCard1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MonsterCard3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MonsterCard3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MonsterCard9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MonsterCard9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AIHP100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AIHP100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nullslot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nullslot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MonsterCard7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MonsterCard7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TTI7_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TTI7_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TTI10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TTI10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="optionbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\optionbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nullCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nullCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MonsterCard10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MonsterCard10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MagicCard_ATK1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MagicCard_ATK1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TTI8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TTI8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MYHP50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MYHP50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MYHP70" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MYHP70.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fild_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fild_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MagicCard_HP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MagicCard_HP1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MonsterCard8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MonsterCard8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TTI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TTI1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nomal_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nomal_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MonsterCard4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MonsterCard4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TTI4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TTI4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OPTION1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OPTION1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AIHP00" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AIHP00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_Start_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\main_Start_1920.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_Start_1440" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\main_Start_1440.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

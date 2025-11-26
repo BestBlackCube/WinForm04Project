@@ -64,6 +64,7 @@ namespace C3_Form_testing
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -90,7 +91,6 @@ namespace C3_Form_testing
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -550,6 +550,17 @@ namespace C3_Form_testing
             this.label34.TabIndex = 72;
             this.label34.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // button13
+            // 
+            this.button13.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Bold);
+            this.button13.Image = global::C3_Form_testing.Properties.Resources.optionbutton;
+            this.button13.Location = new System.Drawing.Point(1617, 12);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(55, 55);
+            this.button13.TabIndex = 73;
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Setting_button);
+            // 
             // pictureBox11
             // 
             this.pictureBox11.BackColor = System.Drawing.SystemColors.Control;
@@ -569,7 +580,7 @@ namespace C3_Form_testing
             this.label32.BackColor = System.Drawing.SystemColors.Control;
             this.label32.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label32.ForeColor = System.Drawing.SystemColors.Control;
-            this.label32.Image = global::C3_Form_testing.Properties.Resources.AIHP;
+            this.label32.Image = global::C3_Form_testing.Properties.Resources.AIHP100;
             this.label32.Location = new System.Drawing.Point(1516, 201);
             this.label32.MaximumSize = new System.Drawing.Size(160, 45);
             this.label32.MinimumSize = new System.Drawing.Size(40, 20);
@@ -584,7 +595,7 @@ namespace C3_Form_testing
             this.label31.BackColor = System.Drawing.SystemColors.Control;
             this.label31.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label31.ForeColor = System.Drawing.SystemColors.Control;
-            this.label31.Image = global::C3_Form_testing.Properties.Resources.MYHP;
+            this.label31.Image = global::C3_Form_testing.Properties.Resources.MYHP100;
             this.label31.Location = new System.Drawing.Point(1516, 150);
             this.label31.MaximumSize = new System.Drawing.Size(160, 45);
             this.label31.MinimumSize = new System.Drawing.Size(45, 10);
@@ -965,23 +976,12 @@ namespace C3_Form_testing
             this.button1.UseVisualStyleBackColor = false;
             this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Card1_button);
             // 
-            // button13
-            // 
-            this.button13.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Bold);
-            this.button13.Location = new System.Drawing.Point(1617, 12);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(55, 55);
-            this.button13.TabIndex = 73;
-            this.button13.Text = "톱니바퀴 그림";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Setting_button);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackgroundImage = global::C3_Form_testing.Properties.Resources.main;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.label34);
@@ -1045,11 +1045,13 @@ namespace C3_Form_testing
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MinimumSize = new System.Drawing.Size(1262, 564);
+            this.MinimumSize = new System.Drawing.Size(1262, 562);
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "전투 페이지";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.Form1_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
